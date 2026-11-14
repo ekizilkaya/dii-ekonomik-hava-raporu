@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ekonomik Hava Raporu</title>
+<meta name="description" content="Türkiye'de ekonomik kamu algısını Google Trends ve TEFAS fon akımlarıyla her gün ölçen, resmi göstergeleri yayımlanmadan önce tahmin eden ve isabetini kamuya açık karneyle raporlayan panel.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='12' cy='13' r='6' fill='%23fab219'/%3E%3Cpath d='M9 26h14a5 5 0 0 0 0-10 7 7 0 0 0-13 2 4 4 0 0 0-1 8z' fill='%232a78d6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css?v=0.2.1">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">DII Ekonomik Hava Tahmin Raporu<small>Kamu algısı, davranış ve resmi göstergeler için günlük ölçüm</small></div>
+    <div class="spacer"></div>
+    <div class="chips" id="stations" aria-label="Veri istasyonları"></div>
+    <button class="theme" id="theme" type="button" aria-label="Tema değiştir">Tema: otomatik</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="block" aria-labelledby="h-today">
+    <h2 id="h-today" class="sr-only">Bugünün havası</h2>
+    <div class="hero">
+      <div class="card" id="hero-main"><div class="empty">Veri yükleniyor…</div></div>
+      <div class="grid tiles" id="hero-tiles"></div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="h-signal">
+    <h2 id="h-signal">Algı: ekonomik korku aramaları</h2>
+    <p class="lead">Her terimin bugünkü arama seviyesi kendi geçmiş yılıyla karşılaştırılır (takvim etkileri arındırılmış, yalnızca geçmiş veriyle).
+      Yüzdelik, bugünkü korku endeksinin son üç yılın günlerinin yüzde kaçından yüksek olduğunu söyler.</p>
+    <div class="filters" role="group" aria-label="Dönem">
+      <span class="lbl">Dönem</span>
+      <div class="seg" id="range">
+        <button type="button" data-range="365" aria-pressed="true">1 yıl</button>
+        <button type="button" data-range="1095" aria-pressed="false">3 yıl</button>
+        <button type="button" data-range="0" aria-pressed="false">Tümü</button>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Korku endeksinin yüzdeliği</h3>
+        <p class="sub">0–100; 70, 85 ve 95 çizgileri sarı, turuncu ve kırmızı kod eşikleri. Numaralı dikey çizgiler olay çalışmasındaki olaylardır.</p>
+        <div class="chart" id="ch-pct"></div>
+        <details class="tbl"><summary>Tablo olarak göster</summary><div class="tablewrap" id="tb-pct"></div></details>
+      </div>
+      <div class="card">
+        <h3>Üç bileşen</h3>
+        <p class="sub">Robust z birimi (0 = kendi geçmiş yılına göre olağan seviye). Korku: istihdam, borç, makro, güvenli liman ve geçim kümelerinin ortalaması.</p>
+        <div class="legend" id="lg-comp"></div>
+        <div class="chart" id="ch-comp"></div>
+        <details class="tbl"><summary>Tablo olarak göster</summary><div class="tablewrap" id="tb-comp"></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="h-clusters">
+    <h2 id="h-clusters">Ne yükseliyor?</h2>
+    <p class="lead">Kümelerin haftalık seviyesi ve son 7 günde olağan seviyesinin en üstünde seyreden terimler. Kırmızı olağandan yüksek, mavi düşük demektir.</p>
+    <div class="grid two">
+      <div class="card">
+        <h3>Kümeler, son 52 hafta</h3>
+        <p class="sub">Haftalık ortalama z. Risk iştahı kümesinde yüksek değer iyimserliktir.</p>
+        <div class="legend" id="lg-heat"></div>
+        <div class="chart" id="ch-heat"></div>
+        <details class="tbl"><summary>Tablo olarak göster</summary><div class="tablewrap" id="tb-heat"></div></details>
+      </div>
+      <div class="card">
+        <h3>En çok yükselen terimler</h3>
+        <p class="sub">Son günün 7 günlük ortalama z değeri; yalnızca kalite süzgecinden geçen terimler.</p>
+        <div class="chart" id="ch-terms"></div>
+        <details class="tbl"><summary>Tüm terimler ve kalite durumu</summary><div class="tablewrap" id="tb-terms"></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="h-nowcast">
+    <h2 id="h-nowcast">Resmi göstergeler yayımlanmadan önce</h2>
+    <p class="lead">Her gösterge için gelecek açıklamanın tahmini. Model, arama sinyalinin aylık değişimini kullanır ve her ay yalnızca o tarihe kadarki veriyle yeniden kurulur.
+      Etiket, 2023'ten bu yana örneklem dışı karnenin sonucudur. Arama verisinin katkısı kanıtlanmadıysa örneklem dışında daha isabetli olan kıyas modelinin tahmini gösterilir.</p>
+    <p class="note" id="nc-summary" style="margin:0 0 14px"></p>
+    <div class="legend" id="lg-nc"></div>
+    <div class="grid two" id="nowcasts"></div>
+  </section>
+
+  <section class="block" aria-labelledby="h-score">
+    <h2 id="h-score">Karne: model kıyasları geçebiliyor mu?</h2>
+    <p class="lead">Örneklem dışı kök ortalama kare hata (RMSE), rastgele yürüyüş (değişmez) ve AR(1) kıyaslarıyla. Oran 1'in altındaysa model daha isabetlidir.
+      p değeri Diebold-Mariano testinden (HLN düzeltmeli, tek yönlü), sekiz hedef için Holm düzeltmesiyle.</p>
+    <div class="card"><div class="tablewrap" id="scorecard" style="max-height:none"></div>
+      <p class="note" id="score-note"></p></div>
+  </section>
+
+  <section class="block" aria-labelledby="h-events">
+    <h2 id="h-events">Geçerlilik: bilinen olaylarda endeks ne gösterdi?</h2>
+    <p class="lead">Olay listesi sonuçlara bakılmadan sabitlendi. Ölçüt: olaydan sonraki 14 günün ortalaması eksi önceki 30 günün ortalaması.
+      Yüzdelik, bu sıçramanın tüm günlerdeki aynı ölçüte göre ne kadar sıra dışı olduğunu gösterir.</p>
+    <div class="card"><div class="tablewrap" id="events" style="max-height:none"></div>
+      <p class="note">Okuma notu: Ekonomik bir şok olan Kasım 2021 kur kaybı endekste belirgin bir sıçrama yarattı. Deprem ve siyasi olaylardan sonra ise
+        ekonomik korku aramaları düştü. Olası açıklama, kamu dikkatinin başka konulara kaymasıdır; bu bir hipotezdir, sınanmadı. Seçim gibi önceden bilinen
+        olaylarda belirsizlik aramaları olaydan önce zirve yapar. "Sonrası eksi öncesi" ölçütü bu olayları yakalayamaz; bu, ön kayıtlı tasarımın bir sınırlamasıdır.</p></div>
+  </section>
+
+  <section class="block" aria-labelledby="h-tefas">
+    <h2 id="h-tefas">Davranış: fon akımları (TEFAS)</h2>
+    <p class="lead">Arama verisi ne düşünüldüğünü, fon akımı ne yapıldığını gösterir. Riskten kaçış endeksi, döviz/eurobond ve altın fonlarına akımın hisse fonlarına akıma göre olağan dışılığıdır.</p>
+    <div class="grid two">
+      <div class="card">
+        <h3>Riskten kaçış akım endeksi</h3>
+        <p class="sub">20 iş günü net akımın robust z farkı: ortalama(z döviz/eurobond, z altın) − z hisse.</p>
+        <div class="chart" id="ch-riskoff"></div>
+        <details class="tbl"><summary>Tablo olarak göster</summary><div class="tablewrap" id="tb-riskoff"></div></details>
+      </div>
+      <div class="card">
+        <h3>Son 20 iş günü net akım</h3>
+        <p class="sub">Fon türüne göre, milyar TL (giriş sağa, çıkış sola).</p>
+        <div class="chart" id="ch-flows"></div>
+      </div>
+    </div>
+    <p class="note" id="validity-note"></p>
+  </section>
+
+  <section class="block method" aria-labelledby="h-method">
+    <h2 id="h-method">Yöntem ve sınırlamalar</h2>
+    <div class="card">
+      <h3>Ölçüm</h3>
+      <p>63 Google Trends sorgu grubu, 7 küme. Her terim için: log(1 + arama endeksi), önceki 365 günün medyanından sapma, takvim kuklalarıyla
+        (haftanın günü, ay, tatiller, Ramazan, TÜFE ve PPK günleri, asgari ücret penceresi) arındırma, önceki yılın MAD'iyle ölçekleme. Takvim katsayıları her ay
+        yalnızca geçmiş günlerle yeniden tahmin edilir; hiçbir adım gelecekteki veriyi kullanmaz. Önceki 365 günde günlerin %20'sinden fazlası sıfır olan
+        terimler o gün endekse girmez (Google'ın düşük hacim eşiği). Google'ın o gün için verdiği kısmi değer kullanılmaz.</p>
+      <h3>Hava durumu</h3>
+      <p>Durum, korku endeksinin son üç yıldaki yüzdeliğine göre belirlenir: 95 ve üstü fırtına (kırmızı kod), 85–95 sağanak (turuncu), 70–85 bulutlu (sarı),
+        30–70 parçalı bulutlu, 30'un altı güneşli. Böylece her durumun ne sıklıkla görüldüğü baştan bellidir (%5, %10, %15, %40, %30). Basınç bir metafordur:
+        1013 hPa olağan; geçmişe göre her standart sapma 10 hPa düşürür.</p>
+      <h3>Tahmin ve karne</h3>
+      <p>Hedefin aylık değişimi; Δy<sub>m−1</sub> ve arama sinyalinin ayın 1'i ile kesim günü arasındaki ortalamasının aylık farkıyla ridge regresyonla tahmin edilir.
+        Kıyaslar rastgele yürüyüş ve AR(1)'dir. 2023 Ocak'tan bu yana her ay yalnızca o aya kadarki veriyle yeniden kurulup sınanır. "Kanıtlı katkı" etiketi
+        için model her iki kıyastan da isabetli olmalı ve Holm düzeltmeli p &lt; 0,05 olmalıdır. Tahmin aralığı, geçmiş örneklem dışı hataların %10–%90 kantillerinden gelir.
+        Tüm kurallar ilk değerlendirmeden önce yazıldı (ön kayıt v0.2, 14 Kasım 2026).</p>
+      <h3>Sınırlamalar</h3>
+      <ul>
+        <li>Trends geçmişi 2026'da çekildi; o günlerde gerçekte görülecek değerler biraz farklı olabilirdi (sözde gerçek zamanlı test).</li>
+        <li>Google her çekimde örneklem kullanır; düşük hacimli terimler gürültülüdür ve endeks dışında kalır.</li>
+        <li>Örneklem dışı dönem kısa (2023'ten bu yana); istatistik testlerin gücü sınırlıdır.</li>
+        <li>TEFAS arşivi Temmuz 2025'te başlıyor; akım endeksi ve yakınsak geçerlilik bu kısa döneme dayanır.</li>
+        <li>Sosyal medya istasyonu henüz sentetik veriyle çalışıyor ve hiçbir göstergeye girmiyor.</li>
+      </ul>
+      <p><b>Yatırım tavsiyesi değildir.</b> Bu sayfadaki bilgiler SPK mevzuatı kapsamında yatırım danışmanlığı niteliği taşımaz; getiri tahmini yapılmaz.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" id="foot">DII Ekonomik Hava Tahmin Raporu</div>
+</footer>
+<script src="assets/app.js?v=0.2.1"></script>
+</body>
+</html>
