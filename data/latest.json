@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-14T16:05:52.527102+00:00",
-  "as_of": "2026-11-14T16:05:52.527117+00:00",
+  "generated_at": "2026-11-15T12:27:45.496177+00:00",
+  "as_of": "2026-11-15T12:27:45.496191+00:00",
   "method_version": "v0.2",
   "stations": {
     "evds": {
@@ -24,24 +24,24 @@
   },
   "data_window": {
     "trends_start": "2016-01-01",
-    "trends_end": "2026-11-13",
+    "trends_end": "2026-11-14",
     "signal_start": "2018-11-02"
   },
   "headline": {
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "durum": "sağanak",
     "ikon": "rain",
     "uyari_kodu": "turuncu",
-    "korku": 0.433,
-    "korku_pct": 85.9,
-    "korku_z": 1.21,
-    "basinc_hpa": 1000.9,
-    "risk_istahi": -0.89,
-    "belirsizlik": 0.004,
-    "bulutluluk_pct": 23.0,
+    "korku": 0.51,
+    "korku_pct": 91.1,
+    "korku_z": 1.51,
+    "basinc_hpa": 997.9,
+    "risk_istahi": -0.847,
+    "belirsizlik": 0.045,
+    "bulutluluk_pct": 31.0,
     "n_terms": 26,
-    "korku_7g_once": 0.735,
-    "korku_pct_30g_once": 57.4
+    "korku_7g_once": 0.647,
+    "korku_pct_30g_once": 64.7
   },
   "state_base_rates": {
     "design": {
@@ -52,10 +52,10 @@
       "güneşli": 30
     },
     "realized": {
-      "parçalı bulutlu": 45.5,
-      "güneşli": 29.8,
-      "bulutlu": 14.6,
-      "sağanak": 7.3,
+      "parçalı bulutlu": 45.3,
+      "güneşli": 29.9,
+      "bulutlu": 14.8,
+      "sağanak": 7.2,
       "fırtına": 2.8
     }
   },
@@ -64,43 +64,43 @@
       "id": "K1_istihdam",
       "name": "İstihdam ve gelir kaybı",
       "polarity": "fear",
-      "value": 1.158
+      "value": 1.226
     },
     {
       "id": "K2_borc",
       "name": "Borç, icra ve iflas baskısı",
       "polarity": "fear",
-      "value": 0.72
+      "value": 0.767
     },
     {
       "id": "K3_makro",
       "name": "Makroekonomik kriz algısı",
       "polarity": "fear",
-      "value": 0.269
+      "value": 0.404
     },
     {
       "id": "K4_guvenli_liman",
       "name": "Güvenli liman ve panik",
       "polarity": "fear",
-      "value": -0.201
+      "value": -0.133
     },
     {
       "id": "K5_gecim",
       "name": "Geçim sıkıntısı",
       "polarity": "fear",
-      "value": 0.221
+      "value": 0.288
     },
     {
       "id": "K6_risk_istahi",
       "name": "Risk iştahı ve iyimserlik",
       "polarity": "greed",
-      "value": -0.89
+      "value": -0.847
     },
     {
       "id": "K7_politika_belirsizlik",
       "name": "Politika belirsizliği",
       "polarity": "uncertainty",
-      "value": 0.004
+      "value": 0.045
     }
   ],
   "quality": {
@@ -144,7 +144,7 @@
     "riskten_kacis_date": "2026-11-13",
     "validity": {
       "n_weeks": 44,
-      "spearman": 0.226,
+      "spearman": 0.2,
       "start": "2026-01-16",
       "end": "2026-11-13"
     },
@@ -171,25 +171,25 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 3.2535,
+        "rmse_model": 3.2532,
         "rmse_ar1": 3.2694,
         "rmse_rw": 3.1566,
         "ratio_ar1": 0.995,
         "ratio_rw": 1.031,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.222,
-          "p": 0.4128,
+          "stat": 0.226,
+          "p": 0.411,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -1.597,
-          "p": 0.9414,
+          "stat": -1.591,
+          "p": 0.9407,
           "n": 46
         },
         "dm_vs_best": {
-          "stat": -1.597,
-          "p": 0.9414,
+          "stat": -1.591,
+          "p": 0.9407,
           "n": 46
         },
         "hit_model": 0.391,
@@ -203,40 +203,40 @@
         "status": "ok",
         "last_actual": 84.817,
         "last_month": "2026-10",
-        "model": 84.797,
-        "model_lo": 82.606,
-        "model_hi": 88.395,
+        "model": 84.794,
+        "model_lo": 82.603,
+        "model_hi": 88.391,
         "ar1": 84.778,
         "ar1_lo": 82.641,
         "ar1_hi": 88.689,
         "rw": 84.817,
         "rw_lo": 82.421,
         "rw_hi": 88.247,
-        "delta_model": -0.02,
+        "delta_model": -0.024,
         "delta_ar1": -0.039,
-        "n_days": 13,
+        "n_days": 14,
         "expected_days": 15,
         "alpha": 1000,
         "contributions": [
           {
             "feature": "d_K3_makro",
-            "value": 0.0353
+            "value": 0.0328
           },
           {
             "feature": "d_risk_istahi_gunluk",
-            "value": 0.0307
+            "value": 0.0266
           },
           {
             "feature": "d_K6_risk_istahi",
-            "value": 0.0307
+            "value": 0.0266
           },
           {
             "feature": "d_K1_istihdam",
-            "value": -0.0214
+            "value": -0.0205
           },
           {
             "feature": "d_K2_borc",
-            "value": -0.0116
+            "value": -0.0104
           }
         ]
       },
@@ -253,25 +253,25 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 4.9527,
+        "rmse_model": 4.955,
         "rmse_ar1": 4.9199,
         "rmse_rw": 4.8054,
         "ratio_ar1": 1.007,
         "ratio_rw": 1.031,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": -0.264,
-          "p": 0.6033,
+          "stat": -0.282,
+          "p": 0.6104,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -1.301,
-          "p": 0.9,
+          "stat": -1.323,
+          "p": 0.9038,
           "n": 46
         },
         "dm_vs_best": {
-          "stat": -1.301,
-          "p": 0.9,
+          "stat": -1.323,
+          "p": 0.9038,
           "n": 46
         },
         "hit_model": 0.391,
@@ -285,40 +285,40 @@
         "status": "ok",
         "last_actual": 81.75,
         "last_month": "2026-10",
-        "model": 81.851,
-        "model_lo": 77.636,
-        "model_hi": 87.209,
+        "model": 81.695,
+        "model_lo": 77.479,
+        "model_hi": 87.053,
         "ar1": 80.99,
         "ar1_lo": 76.833,
         "ar1_hi": 86.269,
         "rw": 81.75,
         "rw_lo": 77.32,
         "rw_hi": 86.66,
-        "delta_model": 0.102,
+        "delta_model": -0.055,
         "delta_ar1": -0.759,
-        "n_days": 13,
+        "n_days": 14,
         "expected_days": 15,
         "alpha": 0.3,
         "contributions": [
           {
             "feature": "ar",
-            "value": -0.6885
+            "value": -0.678
           },
           {
             "feature": "d_risk_istahi_gunluk",
-            "value": 0.315
+            "value": 0.2659
           },
           {
             "feature": "d_K6_risk_istahi",
-            "value": 0.315
+            "value": 0.2659
           },
           {
             "feature": "d_K5_gecim",
-            "value": 0.2644
+            "value": 0.2642
           },
           {
             "feature": "d_K2_borc",
-            "value": -0.1246
+            "value": -0.1087
           }
         ]
       },
@@ -335,25 +335,25 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 4.2015,
+        "rmse_model": 4.2013,
         "rmse_ar1": 4.2692,
         "rmse_rw": 4.0661,
         "ratio_ar1": 0.984,
         "ratio_rw": 1.033,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.404,
-          "p": 0.3442,
+          "stat": 0.405,
+          "p": 0.3438,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -1.57,
-          "p": 0.9383,
+          "stat": -1.568,
+          "p": 0.938,
           "n": 46
         },
         "dm_vs_best": {
-          "stat": -1.57,
-          "p": 0.9383,
+          "stat": -1.568,
+          "p": 0.938,
           "n": 46
         },
         "hit_model": 0.283,
@@ -367,8 +367,8 @@
         "status": "ok",
         "last_actual": 86.45,
         "last_month": "2026-10",
-        "model": 86.501,
-        "model_lo": 83.08,
+        "model": 86.5,
+        "model_lo": 83.079,
         "model_hi": 91.329,
         "ar1": 87.026,
         "ar1_lo": 83.467,
@@ -376,9 +376,9 @@
         "rw": 86.45,
         "rw_lo": 82.313,
         "rw_hi": 90.735,
-        "delta_model": 0.051,
+        "delta_model": 0.05,
         "delta_ar1": 0.576,
-        "n_days": 13,
+        "n_days": 14,
         "expected_days": 15,
         "alpha": 1000,
         "contributions": [
@@ -388,19 +388,19 @@
           },
           {
             "feature": "d_K3_makro",
-            "value": 0.0527
+            "value": 0.0494
           },
           {
             "feature": "d_K1_istihdam",
-            "value": -0.0489
+            "value": -0.0443
           },
           {
             "feature": "d_risk_istahi_gunluk",
-            "value": 0.0346
+            "value": 0.0299
           },
           {
             "feature": "d_K6_risk_istahi",
-            "value": 0.0346
+            "value": 0.0299
           }
         ]
       },
@@ -417,25 +417,25 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 3.4965,
+        "rmse_model": 3.4967,
         "rmse_ar1": 3.5336,
         "rmse_rw": 3.4278,
-        "ratio_ar1": 0.989,
+        "ratio_ar1": 0.99,
         "ratio_rw": 1.02,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.231,
-          "p": 0.409,
+          "stat": 0.23,
+          "p": 0.4095,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -0.634,
-          "p": 0.7353,
+          "stat": -0.636,
+          "p": 0.736,
           "n": 46
         },
         "dm_vs_best": {
-          "stat": -0.634,
-          "p": 0.7353,
+          "stat": -0.636,
+          "p": 0.736,
           "n": 46
         },
         "hit_model": 0.435,
@@ -449,40 +449,40 @@
         "status": "ok",
         "last_actual": 81.198,
         "last_month": "2026-10",
-        "model": 81.344,
-        "model_lo": 77.936,
-        "model_hi": 85.646,
+        "model": 81.334,
+        "model_lo": 77.925,
+        "model_hi": 85.635,
         "ar1": 81.324,
         "ar1_lo": 77.689,
         "ar1_hi": 85.908,
         "rw": 81.198,
         "rw_lo": 77.466,
         "rw_hi": 85.84,
-        "delta_model": 0.147,
+        "delta_model": 0.136,
         "delta_ar1": 0.126,
-        "n_days": 13,
+        "n_days": 14,
         "expected_days": 15,
         "alpha": 1000,
         "contributions": [
           {
             "feature": "d_K3_makro",
-            "value": 0.0699
+            "value": 0.0658
           },
           {
             "feature": "d_risk_istahi_gunluk",
-            "value": 0.0154
+            "value": 0.0133
           },
           {
             "feature": "d_K6_risk_istahi",
-            "value": 0.0154
+            "value": 0.0133
           },
           {
             "feature": "d_K1_istihdam",
-            "value": -0.0138
+            "value": -0.0125
           },
           {
             "feature": "d_K5_gecim",
-            "value": 0.0133
+            "value": 0.0123
           }
         ]
       },
@@ -499,25 +499,25 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 2.7749,
+        "rmse_model": 2.776,
         "rmse_ar1": 2.6547,
         "rmse_rw": 2.6952,
-        "ratio_ar1": 1.045,
+        "ratio_ar1": 1.046,
         "ratio_rw": 1.03,
         "best_bench": "ar1",
         "dm_vs_ar1": {
-          "stat": -0.669,
-          "p": 0.7466,
+          "stat": -0.675,
+          "p": 0.7483,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -0.543,
-          "p": 0.7052,
+          "stat": -0.551,
+          "p": 0.7077,
           "n": 46
         },
         "dm_vs_best": {
-          "stat": -0.669,
-          "p": 0.7466,
+          "stat": -0.675,
+          "p": 0.7483,
           "n": 46
         },
         "hit_model": 0.5,
@@ -531,40 +531,40 @@
         "status": "ok",
         "last_actual": 41.562,
         "last_month": "2026-10",
-        "model": 42.47,
-        "model_lo": 40.022,
-        "model_hi": 45.849,
+        "model": 42.606,
+        "model_lo": 40.159,
+        "model_hi": 45.986,
         "ar1": 43.171,
         "ar1_lo": 40.179,
         "ar1_hi": 46.894,
         "rw": 41.562,
         "rw_lo": 38.866,
         "rw_hi": 45.163,
-        "delta_model": 0.908,
+        "delta_model": 1.044,
         "delta_ar1": 1.608,
-        "n_days": 13,
+        "n_days": 14,
         "expected_days": 15,
         "alpha": 0.3,
         "contributions": [
           {
             "feature": "ar",
-            "value": 1.297
+            "value": 1.3013
           },
           {
             "feature": "d_K1_istihdam",
-            "value": -0.8819
+            "value": -0.7888
           },
           {
             "feature": "d_K3_makro",
-            "value": 0.2095
-          },
-          {
-            "feature": "d_korku_gunluk",
-            "value": -0.0882
+            "value": 0.2009
           },
           {
             "feature": "d_risk_istahi_gunluk",
-            "value": 0.0777
+            "value": 0.0664
+          },
+          {
+            "feature": "d_K6_risk_istahi",
+            "value": 0.0664
           }
         ]
       },
@@ -581,28 +581,28 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 3.8767,
+        "rmse_model": 3.8748,
         "rmse_ar1": 3.7647,
         "rmse_rw": 3.4951,
-        "ratio_ar1": 1.03,
+        "ratio_ar1": 1.029,
         "ratio_rw": 1.109,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": -0.927,
-          "p": 0.8206,
+          "stat": -0.912,
+          "p": 0.8168,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -1.839,
-          "p": 0.9637,
+          "stat": -1.83,
+          "p": 0.963,
           "n": 46
         },
         "dm_vs_best": {
-          "stat": -1.839,
-          "p": 0.9637,
+          "stat": -1.83,
+          "p": 0.963,
           "n": 46
         },
-        "hit_model": 0.4,
+        "hit_model": 0.422,
         "hit_ar1": 0.4,
         "coverage": 0.848,
         "start": "2023-01",
@@ -613,40 +613,40 @@
         "status": "ok",
         "last_actual": 43.75,
         "last_month": "2026-10",
-        "model": 43.74,
-        "model_lo": 38.639,
-        "model_hi": 45.06,
+        "model": 43.606,
+        "model_lo": 38.505,
+        "model_hi": 44.924,
         "ar1": 43.955,
         "ar1_lo": 38.732,
         "ar1_hi": 45.217,
         "rw": 43.75,
         "rw_lo": 39.285,
         "rw_hi": 45.525,
-        "delta_model": -0.01,
+        "delta_model": -0.144,
         "delta_ar1": 0.205,
-        "n_days": 13,
+        "n_days": 14,
         "expected_days": 15,
-        "alpha": 300,
+        "alpha": 100,
         "contributions": [
           {
             "feature": "d_K5_gecim",
-            "value": -0.0784
-          },
-          {
-            "feature": "d_risk_istahi_gunluk",
-            "value": -0.0767
-          },
-          {
-            "feature": "d_K6_risk_istahi",
-            "value": -0.0767
+            "value": -0.1556
           },
           {
             "feature": "d_K3_makro",
-            "value": -0.0702
+            "value": -0.1452
+          },
+          {
+            "feature": "d_risk_istahi_gunluk",
+            "value": -0.1184
+          },
+          {
+            "feature": "d_K6_risk_istahi",
+            "value": -0.1184
           },
           {
             "feature": "d_K1_istihdam",
-            "value": 0.0518
+            "value": 0.084
           }
         ]
       },
@@ -695,16 +695,16 @@
         "status": "ok",
         "last_actual": 23.89,
         "last_month": "2026-10",
-        "model": 23.753,
-        "model_lo": 22.238,
-        "model_hi": 24.971,
+        "model": 23.762,
+        "model_lo": 22.247,
+        "model_hi": 24.99,
         "ar1": 24.058,
         "ar1_lo": 22.509,
         "ar1_hi": 25.294,
         "rw": 23.89,
         "rw_lo": 22.16,
         "rw_hi": 24.9,
-        "delta_model": -0.137,
+        "delta_model": -0.128,
         "delta_ar1": 0.168,
         "n_days": 10,
         "expected_days": 10,
@@ -712,23 +712,23 @@
         "contributions": [
           {
             "feature": "d_risk_istahi_gunluk",
-            "value": -0.0849
+            "value": -0.0839
           },
           {
             "feature": "d_K6_risk_istahi",
-            "value": -0.0849
+            "value": -0.0839
           },
           {
             "feature": "d_K1_istihdam",
-            "value": -0.074
+            "value": -0.068
           },
           {
             "feature": "d_K5_gecim",
-            "value": -0.0532
+            "value": -0.055
           },
           {
-            "feature": "d_K3_makro",
-            "value": 0.022
+            "feature": "d_K4_guvenli_liman",
+            "value": -0.0198
           }
         ]
       },
@@ -745,25 +745,25 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 2.159,
+        "rmse_model": 2.1544,
         "rmse_ar1": 2.1199,
         "rmse_rw": 2.1302,
-        "ratio_ar1": 1.018,
-        "ratio_rw": 1.013,
+        "ratio_ar1": 1.016,
+        "ratio_rw": 1.011,
         "best_bench": "ar1",
         "dm_vs_ar1": {
-          "stat": -0.476,
-          "p": 0.6817,
+          "stat": -0.432,
+          "p": 0.6659,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -0.309,
-          "p": 0.6208,
+          "stat": -0.265,
+          "p": 0.6037,
           "n": 46
         },
         "dm_vs_best": {
-          "stat": -0.476,
-          "p": 0.6817,
+          "stat": -0.432,
+          "p": 0.6659,
           "n": 46
         },
         "hit_model": 0.565,
@@ -777,40 +777,40 @@
         "status": "ok",
         "last_actual": 2.58,
         "last_month": "2026-10",
-        "model": 2.832,
-        "model_lo": 0.624,
-        "model_hi": 6.435,
+        "model": 2.978,
+        "model_lo": 0.769,
+        "model_hi": 6.518,
         "ar1": 2.48,
         "ar1_lo": 0.453,
         "ar1_hi": 6.077,
         "rw": 2.58,
         "rw_lo": 0.321,
         "rw_hi": 6.406,
-        "delta_model": 0.253,
+        "delta_model": 0.398,
         "delta_ar1": -0.1,
-        "n_days": 13,
+        "n_days": 14,
         "expected_days": 30,
-        "alpha": 300,
+        "alpha": 100,
         "contributions": [
           {
             "feature": "d_K5_gecim",
-            "value": 0.1818
+            "value": 0.2905
           },
           {
             "feature": "d_korku_gunluk",
-            "value": 0.0796
+            "value": 0.1285
           },
           {
             "feature": "d_K1_istihdam",
-            "value": 0.0672
+            "value": 0.0971
           },
           {
             "feature": "d_K4_guvenli_liman",
-            "value": -0.0419
+            "value": -0.0566
           },
           {
-            "feature": "ar",
-            "value": -0.0221
+            "feature": "d_K2_borc",
+            "value": -0.0388
           }
         ]
       },
@@ -831,7 +831,7 @@
       "component": "korku",
       "status": "ok",
       "jump": 0.094,
-      "jump_pct": 66.7,
+      "jump_pct": 66.5,
       "peak_pct": null
     },
     {
@@ -840,7 +840,7 @@
       "component": "korku",
       "status": "ok",
       "jump": 0.201,
-      "jump_pct": 80.4,
+      "jump_pct": 80.5,
       "peak_pct": 79.2
     },
     {
@@ -849,7 +849,7 @@
       "component": "korku",
       "status": "ok",
       "jump": 0.377,
-      "jump_pct": 92.7,
+      "jump_pct": 92.8,
       "peak_pct": 100.0
     },
     {
