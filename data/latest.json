@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-16T23:53:45.583585+00:00",
-  "as_of": "2026-11-16T23:53:45.583594+00:00",
+  "generated_at": "2026-11-17T14:48:14.623805+00:00",
+  "as_of": "2026-11-17T14:48:14.623819+00:00",
   "method_version": "v0.2",
   "stations": {
     "evds": {
       "ok": true,
       "detail": {
-        "rows": 2170,
+        "rows": 2171,
         "targets": 12,
         "expected": 12,
         "partial": false
