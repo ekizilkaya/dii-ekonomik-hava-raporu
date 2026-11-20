@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-19T22:48:55.829072+00:00",
-  "as_of": "2026-11-19T22:48:55.829100+00:00",
+  "generated_at": "2026-11-20T12:10:03.236017+00:00",
+  "as_of": "2026-11-20T12:10:03.236032+00:00",
   "method_version": "v0.2",
   "stations": {
     "evds": {
       "ok": true,
       "detail": {
-        "rows": 2174,
+        "rows": 2179,
         "targets": 12,
         "expected": 12,
         "partial": false
@@ -24,24 +24,24 @@
   },
   "data_window": {
     "trends_start": "2016-01-01",
-    "trends_end": "2026-11-18",
+    "trends_end": "2026-11-19",
     "signal_start": "2018-11-02"
   },
   "headline": {
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "durum": "fırtına",
     "ikon": "storm",
     "uyari_kodu": "kırmızı",
-    "korku": 0.718,
-    "korku_pct": 98.6,
-    "korku_z": 2.27,
-    "basinc_hpa": 990.3,
-    "risk_istahi": -0.823,
-    "belirsizlik": -0.027,
-    "bulutluluk_pct": 35.0,
+    "korku": 0.648,
+    "korku_pct": 97.0,
+    "korku_z": 2.01,
+    "basinc_hpa": 992.9,
+    "risk_istahi": -0.825,
+    "belirsizlik": -0.028,
+    "bulutluluk_pct": 31.0,
     "n_terms": 26,
-    "korku_7g_once": 0.551,
-    "korku_pct_30g_once": 63.0
+    "korku_7g_once": 0.493,
+    "korku_pct_30g_once": 69.6
   },
   "state_base_rates": {
     "design": {
@@ -54,8 +54,8 @@
     "realized": {
       "parçalı bulutlu": 45.3,
       "güneşli": 29.8,
-      "bulutlu": 14.8,
-      "sağanak": 7.1,
+      "bulutlu": 14.6,
+      "sağanak": 7.2,
       "fırtına": 3.0
     }
   },
@@ -64,43 +64,43 @@
       "id": "K1_istihdam",
       "name": "İstihdam ve gelir kaybı",
       "polarity": "fear",
-      "value": 1.452
+      "value": 1.36
     },
     {
       "id": "K2_borc",
       "name": "Borç, icra ve iflas baskısı",
       "polarity": "fear",
-      "value": 1.118
+      "value": 1.075
     },
     {
       "id": "K3_makro",
       "name": "Makroekonomik kriz algısı",
       "polarity": "fear",
-      "value": 0.497
+      "value": 0.15
     },
     {
       "id": "K4_guvenli_liman",
       "name": "Güvenli liman ve panik",
       "polarity": "fear",
-      "value": 0.244
+      "value": 0.28
     },
     {
       "id": "K5_gecim",
       "name": "Geçim sıkıntısı",
       "polarity": "fear",
-      "value": 0.28
+      "value": 0.376
     },
     {
       "id": "K6_risk_istahi",
       "name": "Risk iştahı ve iyimserlik",
       "polarity": "greed",
-      "value": -0.823
+      "value": -0.825
     },
     {
       "id": "K7_politika_belirsizlik",
       "name": "Politika belirsizliği",
       "polarity": "uncertainty",
-      "value": -0.027
+      "value": -0.028
     }
   ],
   "quality": {
@@ -139,25 +139,25 @@
     "rule": "önceki 365 günde sıfır payı > %20 olan terim o gün dışarıda"
   },
   "tefas": {
-    "last_date": "2026-11-19",
-    "riskten_kacis": -0.39,
-    "riskten_kacis_date": "2026-11-19",
+    "last_date": "2026-11-20",
+    "riskten_kacis": -0.36,
+    "riskten_kacis_date": "2026-11-20",
     "validity": {
       "n_weeks": 45,
-      "spearman": 0.184,
+      "spearman": 0.222,
       "start": "2026-01-16",
       "end": "2026-11-20"
     },
     "akim20_last": {
-      "para_piyasasi": 109.89,
-      "hisse": 2.75,
-      "doviz_eurobond": -7.64,
-      "altin_kiymetli": -17.45,
-      "serbest": -139.37,
-      "borclanma": -0.34,
-      "degisken_karma": -3.8,
-      "katilim": 0.36,
-      "fon_sepeti": -1.58
+      "para_piyasasi": 79.97,
+      "hisse": 2.77,
+      "doviz_eurobond": -12.7,
+      "altin_kiymetli": -13.47,
+      "serbest": -197.37,
+      "borclanma": 0.26,
+      "degisken_karma": -3.38,
+      "katilim": -1.82,
+      "fon_sepeti": -1.52
     }
   },
   "nowcasts": [
@@ -169,76 +169,38 @@
       "cutoff_day": 15,
       "label": "yok",
       "p_holm": 1.0,
-      "n_oos": 46,
+      "n_oos": 47,
       "metrics": {
-        "rmse_model": 3.2541,
-        "rmse_ar1": 3.2694,
-        "rmse_rw": 3.1566,
+        "rmse_model": 3.2316,
+        "rmse_ar1": 3.248,
+        "rmse_rw": 3.1363,
         "ratio_ar1": 0.995,
-        "ratio_rw": 1.031,
+        "ratio_rw": 1.03,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.213,
-          "p": 0.4161,
-          "n": 46
+          "stat": 0.232,
+          "p": 0.4089,
+          "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.607,
-          "p": 0.9425,
-          "n": 46
+          "stat": -1.593,
+          "p": 0.941,
+          "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.607,
-          "p": 0.9425,
-          "n": 46
+          "stat": -1.593,
+          "p": 0.941,
+          "n": 47
         },
-        "hit_model": 0.391,
-        "hit_ar1": 0.326,
-        "coverage": 0.848,
+        "hit_model": 0.383,
+        "hit_ar1": 0.319,
+        "coverage": 0.851,
         "start": "2023-01",
-        "end": "2026-10"
+        "end": "2026-11"
       },
       "live": {
-        "month": "2026-11",
-        "status": "ok",
-        "last_actual": 84.817,
-        "last_month": "2026-10",
-        "model": 84.758,
-        "model_lo": 82.567,
-        "model_hi": 88.355,
-        "ar1": 84.778,
-        "ar1_lo": 82.641,
-        "ar1_hi": 88.689,
-        "rw": 84.817,
-        "rw_lo": 82.421,
-        "rw_hi": 88.247,
-        "delta_model": -0.059,
-        "delta_ar1": -0.039,
-        "n_days": 15,
-        "expected_days": 15,
-        "alpha": 1000,
-        "contributions": [
-          {
-            "feature": "d_K1_istihdam",
-            "value": -0.023
-          },
-          {
-            "feature": "d_K3_makro",
-            "value": 0.0214
-          },
-          {
-            "feature": "d_risk_istahi_gunluk",
-            "value": 0.021
-          },
-          {
-            "feature": "d_K6_risk_istahi",
-            "value": 0.021
-          },
-          {
-            "feature": "d_korku_gunluk",
-            "value": -0.0138
-          }
-        ]
+        "month": "2026-12",
+        "status": "pencere henüz açılmadı"
       },
       "error": null,
       "headline_model": "rw"
@@ -251,76 +213,38 @@
       "cutoff_day": 15,
       "label": "yok",
       "p_holm": 1.0,
-      "n_oos": 46,
+      "n_oos": 47,
       "metrics": {
-        "rmse_model": 4.9561,
-        "rmse_ar1": 4.9199,
-        "rmse_rw": 4.8054,
-        "ratio_ar1": 1.007,
-        "ratio_rw": 1.031,
+        "rmse_model": 4.9118,
+        "rmse_ar1": 4.8888,
+        "rmse_rw": 4.7667,
+        "ratio_ar1": 1.005,
+        "ratio_rw": 1.03,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": -0.291,
-          "p": 0.6137,
-          "n": 46
+          "stat": -0.187,
+          "p": 0.5736,
+          "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.333,
-          "p": 0.9054,
-          "n": 46
+          "stat": -1.297,
+          "p": 0.8995,
+          "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.333,
-          "p": 0.9054,
-          "n": 46
+          "stat": -1.297,
+          "p": 0.8995,
+          "n": 47
         },
-        "hit_model": 0.391,
-        "hit_ar1": 0.435,
-        "coverage": 0.891,
+        "hit_model": 0.383,
+        "hit_ar1": 0.426,
+        "coverage": 0.894,
         "start": "2023-01",
-        "end": "2026-10"
+        "end": "2026-11"
       },
       "live": {
-        "month": "2026-11",
-        "status": "ok",
-        "last_actual": 81.75,
-        "last_month": "2026-10",
-        "model": 81.576,
-        "model_lo": 77.361,
-        "model_hi": 86.934,
-        "ar1": 80.99,
-        "ar1_lo": 76.833,
-        "ar1_hi": 86.269,
-        "rw": 81.75,
-        "rw_lo": 77.32,
-        "rw_hi": 86.66,
-        "delta_model": -0.173,
-        "delta_ar1": -0.759,
-        "n_days": 15,
-        "expected_days": 15,
-        "alpha": 0.3,
-        "contributions": [
-          {
-            "feature": "ar",
-            "value": -0.6839
-          },
-          {
-            "feature": "d_K5_gecim",
-            "value": 0.2576
-          },
-          {
-            "feature": "d_risk_istahi_gunluk",
-            "value": 0.2148
-          },
-          {
-            "feature": "d_K6_risk_istahi",
-            "value": 0.2148
-          },
-          {
-            "feature": "d_K2_borc",
-            "value": -0.1303
-          }
-        ]
+        "month": "2026-12",
+        "status": "pencere henüz açılmadı"
       },
       "error": null,
       "headline_model": "rw"
@@ -333,76 +257,38 @@
       "cutoff_day": 15,
       "label": "yok",
       "p_holm": 1.0,
-      "n_oos": 46,
+      "n_oos": 47,
       "metrics": {
-        "rmse_model": 4.2022,
-        "rmse_ar1": 4.2692,
-        "rmse_rw": 4.0661,
-        "ratio_ar1": 0.984,
+        "rmse_model": 4.1781,
+        "rmse_ar1": 4.2379,
+        "rmse_rw": 4.0459,
+        "ratio_ar1": 0.986,
         "ratio_rw": 1.033,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.399,
-          "p": 0.3457,
-          "n": 46
+          "stat": 0.362,
+          "p": 0.3594,
+          "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.578,
-          "p": 0.9393,
-          "n": 46
+          "stat": -1.556,
+          "p": 0.9368,
+          "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.578,
-          "p": 0.9393,
-          "n": 46
+          "stat": -1.556,
+          "p": 0.9368,
+          "n": 47
         },
-        "hit_model": 0.283,
-        "hit_ar1": 0.391,
-        "coverage": 0.848,
+        "hit_model": 0.298,
+        "hit_ar1": 0.404,
+        "coverage": 0.851,
         "start": "2023-01",
-        "end": "2026-10"
+        "end": "2026-11"
       },
       "live": {
-        "month": "2026-11",
-        "status": "ok",
-        "last_actual": 86.45,
-        "last_month": "2026-10",
-        "model": 86.454,
-        "model_lo": 83.033,
-        "model_hi": 91.282,
-        "ar1": 87.026,
-        "ar1_lo": 83.467,
-        "ar1_hi": 91.773,
-        "rw": 86.45,
-        "rw_lo": 82.313,
-        "rw_hi": 90.735,
-        "delta_model": 0.004,
-        "delta_ar1": 0.576,
-        "n_days": 15,
-        "expected_days": 15,
-        "alpha": 1000,
-        "contributions": [
-          {
-            "feature": "ar",
-            "value": 0.0576
-          },
-          {
-            "feature": "d_K1_istihdam",
-            "value": -0.0493
-          },
-          {
-            "feature": "d_K3_makro",
-            "value": 0.0321
-          },
-          {
-            "feature": "d_risk_istahi_gunluk",
-            "value": 0.0237
-          },
-          {
-            "feature": "d_K6_risk_istahi",
-            "value": 0.0237
-          }
-        ]
+        "month": "2026-12",
+        "status": "pencere henüz açılmadı"
       },
       "error": null,
       "headline_model": "rw"
@@ -415,76 +301,38 @@
       "cutoff_day": 15,
       "label": "yok",
       "p_holm": 1.0,
-      "n_oos": 46,
+      "n_oos": 47,
       "metrics": {
-        "rmse_model": 3.4967,
-        "rmse_ar1": 3.5336,
-        "rmse_rw": 3.4278,
+        "rmse_model": 3.467,
+        "rmse_ar1": 3.5033,
+        "rmse_rw": 3.3977,
         "ratio_ar1": 0.99,
         "ratio_rw": 1.02,
         "best_bench": "rw",
         "dm_vs_ar1": {
           "stat": 0.23,
-          "p": 0.4095,
-          "n": 46
+          "p": 0.4097,
+          "n": 47
         },
         "dm_vs_rw": {
-          "stat": -0.636,
-          "p": 0.7359,
-          "n": 46
+          "stat": -0.648,
+          "p": 0.7399,
+          "n": 47
         },
         "dm_vs_best": {
-          "stat": -0.636,
-          "p": 0.7359,
-          "n": 46
+          "stat": -0.648,
+          "p": 0.7399,
+          "n": 47
         },
-        "hit_model": 0.413,
-        "hit_ar1": 0.522,
-        "coverage": 0.848,
+        "hit_model": 0.404,
+        "hit_ar1": 0.511,
+        "coverage": 0.851,
         "start": "2023-01",
-        "end": "2026-10"
+        "end": "2026-11"
       },
       "live": {
-        "month": "2026-11",
-        "status": "ok",
-        "last_actual": 81.198,
-        "last_month": "2026-10",
-        "model": 81.304,
-        "model_lo": 77.896,
-        "model_hi": 85.605,
-        "ar1": 81.324,
-        "ar1_lo": 77.689,
-        "ar1_hi": 85.908,
-        "rw": 81.198,
-        "rw_lo": 77.466,
-        "rw_hi": 85.84,
-        "delta_model": 0.107,
-        "delta_ar1": 0.126,
-        "n_days": 15,
-        "expected_days": 15,
-        "alpha": 1000,
-        "contributions": [
-          {
-            "feature": "d_K3_makro",
-            "value": 0.0439
-          },
-          {
-            "feature": "d_K1_istihdam",
-            "value": -0.0137
-          },
-          {
-            "feature": "d_K5_gecim",
-            "value": 0.0122
-          },
-          {
-            "feature": "d_risk_istahi_gunluk",
-            "value": 0.0106
-          },
-          {
-            "feature": "d_K6_risk_istahi",
-            "value": 0.0106
-          }
-        ]
+        "month": "2026-12",
+        "status": "pencere henüz açılmadı"
       },
       "error": null,
       "headline_model": "rw"
@@ -497,76 +345,38 @@
       "cutoff_day": 15,
       "label": "yok",
       "p_holm": 1.0,
-      "n_oos": 46,
+      "n_oos": 47,
       "metrics": {
-        "rmse_model": 2.763,
-        "rmse_ar1": 2.6547,
-        "rmse_rw": 2.6952,
-        "ratio_ar1": 1.041,
+        "rmse_model": 2.734,
+        "rmse_ar1": 2.6422,
+        "rmse_rw": 2.667,
+        "ratio_ar1": 1.035,
         "ratio_rw": 1.025,
         "best_bench": "ar1",
         "dm_vs_ar1": {
-          "stat": -0.602,
-          "p": 0.725,
-          "n": 46
+          "stat": -0.518,
+          "p": 0.6964,
+          "n": 47
         },
         "dm_vs_rw": {
           "stat": -0.462,
-          "p": 0.6767,
-          "n": 46
+          "p": 0.6769,
+          "n": 47
         },
         "dm_vs_best": {
-          "stat": -0.602,
-          "p": 0.725,
-          "n": 46
+          "stat": -0.518,
+          "p": 0.6964,
+          "n": 47
         },
-        "hit_model": 0.522,
-        "hit_ar1": 0.565,
-        "coverage": 0.826,
+        "hit_model": 0.511,
+        "hit_ar1": 0.553,
+        "coverage": 0.83,
         "start": "2023-01",
-        "end": "2026-10"
+        "end": "2026-11"
       },
       "live": {
-        "month": "2026-11",
-        "status": "ok",
-        "last_actual": 41.562,
-        "last_month": "2026-10",
-        "model": 42.363,
-        "model_lo": 39.915,
-        "model_hi": 45.742,
-        "ar1": 43.171,
-        "ar1_lo": 40.179,
-        "ar1_hi": 46.894,
-        "rw": 41.562,
-        "rw_lo": 38.866,
-        "rw_hi": 45.163,
-        "delta_model": 0.8,
-        "delta_ar1": 1.608,
-        "n_days": 15,
-        "expected_days": 15,
-        "alpha": 0.3,
-        "contributions": [
-          {
-            "feature": "ar",
-            "value": 1.3011
-          },
-          {
-            "feature": "d_K1_istihdam",
-            "value": -0.8771
-          },
-          {
-            "feature": "d_K3_makro",
-            "value": 0.1319
-          },
-          {
-            "feature": "d_korku_gunluk",
-            "value": -0.1245
-          },
-          {
-            "feature": "d_risk_istahi_gunluk",
-            "value": 0.0533
-          }
-        ]
+        "month": "2026-12",
+        "status": "pencere henüz açılmadı"
       },
       "error": null,
       "headline_model": "ar1"
@@ -581,25 +391,25 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 3.8754,
+        "rmse_model": 3.8751,
         "rmse_ar1": 3.7647,
         "rmse_rw": 3.4951,
         "ratio_ar1": 1.029,
         "ratio_rw": 1.109,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": -0.916,
-          "p": 0.8177,
+          "stat": -0.914,
+          "p": 0.8171,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -1.832,
-          "p": 0.9632,
+          "stat": -1.83,
+          "p": 0.9631,
           "n": 46
         },
         "dm_vs_best": {
-          "stat": -1.832,
-          "p": 0.9632,
+          "stat": -1.83,
+          "p": 0.9631,
           "n": 46
         },
         "hit_model": 0.4,
@@ -613,40 +423,40 @@
         "status": "ok",
         "last_actual": 43.75,
         "last_month": "2026-10",
-        "model": 43.673,
-        "model_lo": 38.572,
-        "model_hi": 44.992,
+        "model": 43.585,
+        "model_lo": 38.485,
+        "model_hi": 44.904,
         "ar1": 43.955,
         "ar1_lo": 38.732,
         "ar1_hi": 45.217,
         "rw": 43.75,
         "rw_lo": 39.285,
         "rw_hi": 45.525,
-        "delta_model": -0.077,
+        "delta_model": -0.165,
         "delta_ar1": 0.205,
         "n_days": 15,
         "expected_days": 15,
         "alpha": 100,
         "contributions": [
           {
-            "feature": "d_K5_gecim",
-            "value": -0.1567
-          },
-          {
             "feature": "d_K3_makro",
-            "value": -0.0988
+            "value": -0.1678
           },
           {
-            "feature": "d_K1_istihdam",
-            "value": 0.0959
+            "feature": "d_K5_gecim",
+            "value": -0.1586
           },
           {
             "feature": "d_risk_istahi_gunluk",
-            "value": -0.093
+            "value": -0.1069
           },
           {
             "feature": "d_K6_risk_istahi",
-            "value": -0.093
+            "value": -0.1069
+          },
+          {
+            "feature": "d_K1_istihdam",
+            "value": 0.096
           }
         ]
       },
@@ -671,20 +481,20 @@
         "best_bench": "ar1",
         "dm_vs_ar1": {
           "stat": -0.845,
-          "p": 0.7987,
+          "p": 0.7986,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": 1.916,
+          "stat": 1.917,
           "p": 0.0308,
           "n": 46
         },
         "dm_vs_best": {
           "stat": -0.845,
-          "p": 0.7987,
+          "p": 0.7986,
           "n": 46
         },
-        "hit_model": 0.63,
+        "hit_model": 0.609,
         "hit_ar1": 0.696,
         "coverage": 0.87,
         "start": "2023-01",
@@ -695,16 +505,16 @@
         "status": "ok",
         "last_actual": 23.89,
         "last_month": "2026-10",
-        "model": 23.763,
-        "model_lo": 22.248,
-        "model_hi": 24.985,
+        "model": 23.765,
+        "model_lo": 22.25,
+        "model_hi": 24.982,
         "ar1": 24.058,
         "ar1_lo": 22.509,
         "ar1_hi": 25.294,
         "rw": 23.89,
         "rw_lo": 22.16,
         "rw_hi": 24.9,
-        "delta_model": -0.127,
+        "delta_model": -0.125,
         "delta_ar1": 0.168,
         "n_days": 10,
         "expected_days": 10,
@@ -712,23 +522,23 @@
         "contributions": [
           {
             "feature": "d_risk_istahi_gunluk",
-            "value": -0.079
+            "value": -0.0869
           },
           {
             "feature": "d_K6_risk_istahi",
-            "value": -0.079
+            "value": -0.0869
           },
           {
             "feature": "d_K1_istihdam",
-            "value": -0.0716
+            "value": -0.0649
           },
           {
             "feature": "d_K5_gecim",
-            "value": -0.0537
+            "value": -0.0554
           },
           {
             "feature": "d_K3_makro",
-            "value": 0.0152
+            "value": 0.0235
           }
         ]
       },
@@ -745,28 +555,28 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 2.1563,
+        "rmse_model": 2.1574,
         "rmse_ar1": 2.1199,
         "rmse_rw": 2.1302,
-        "ratio_ar1": 1.017,
-        "ratio_rw": 1.012,
+        "ratio_ar1": 1.018,
+        "ratio_rw": 1.013,
         "best_bench": "ar1",
         "dm_vs_ar1": {
           "stat": -0.458,
-          "p": 0.6754,
+          "p": 0.6755,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -0.286,
-          "p": 0.6117,
+          "stat": -0.294,
+          "p": 0.6148,
           "n": 46
         },
         "dm_vs_best": {
           "stat": -0.458,
-          "p": 0.6754,
+          "p": 0.6755,
           "n": 46
         },
-        "hit_model": 0.565,
+        "hit_model": 0.587,
         "hit_ar1": 0.587,
         "coverage": 0.826,
         "start": "2023-01",
@@ -777,40 +587,40 @@
         "status": "ok",
         "last_actual": 2.58,
         "last_month": "2026-10",
-        "model": 3.055,
-        "model_lo": 0.847,
-        "model_hi": 6.59,
+        "model": 2.996,
+        "model_lo": 0.788,
+        "model_hi": 6.578,
         "ar1": 2.48,
         "ar1_lo": 0.453,
         "ar1_hi": 6.077,
         "rw": 2.58,
         "rw_lo": 0.321,
         "rw_hi": 6.406,
-        "delta_model": 0.476,
+        "delta_model": 0.416,
         "delta_ar1": -0.1,
-        "n_days": 18,
+        "n_days": 19,
         "expected_days": 30,
         "alpha": 100,
         "contributions": [
           {
             "feature": "d_K5_gecim",
-            "value": 0.2617
+            "value": 0.2866
           },
           {
             "feature": "d_korku_gunluk",
-            "value": 0.1862
+            "value": 0.129
           },
           {
             "feature": "d_K1_istihdam",
-            "value": 0.1075
+            "value": 0.1031
           },
           {
             "feature": "d_K2_borc",
-            "value": -0.059
+            "value": -0.0538
           },
           {
             "feature": "ar",
-            "value": -0.0345
+            "value": -0.0349
           }
         ]
       },
@@ -831,7 +641,7 @@
       "component": "korku",
       "status": "ok",
       "jump": 0.094,
-      "jump_pct": 66.1,
+      "jump_pct": 66.2,
       "peak_pct": null
     },
     {
@@ -840,7 +650,7 @@
       "component": "korku",
       "status": "ok",
       "jump": 0.201,
-      "jump_pct": 80.2,
+      "jump_pct": 80.3,
       "peak_pct": 79.2
     },
     {
@@ -849,7 +659,7 @@
       "component": "korku",
       "status": "ok",
       "jump": 0.377,
-      "jump_pct": 92.7,
+      "jump_pct": 92.8,
       "peak_pct": 100.0
     },
     {
@@ -876,7 +686,7 @@
       "component": "korku",
       "status": "ok",
       "jump": -0.323,
-      "jump_pct": 8.4,
+      "jump_pct": 8.3,
       "peak_pct": 37.0
     }
   ]
