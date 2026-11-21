@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-20T22:25:30.622450+00:00",
-  "as_of": "2026-11-20T22:25:30.622460+00:00",
+  "generated_at": "2026-11-21T12:08:04.602684+00:00",
+  "as_of": "2026-11-21T12:08:04.602699+00:00",
   "method_version": "v0.2",
   "stations": {
     "evds": {
@@ -24,24 +24,24 @@
   },
   "data_window": {
     "trends_start": "2016-01-01",
-    "trends_end": "2026-11-19",
+    "trends_end": "2026-11-20",
     "signal_start": "2018-11-02"
   },
   "headline": {
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "durum": "fırtına",
     "ikon": "storm",
     "uyari_kodu": "kırmızı",
-    "korku": 0.648,
-    "korku_pct": 97.0,
-    "korku_z": 2.01,
-    "basinc_hpa": 992.9,
-    "risk_istahi": -0.825,
-    "belirsizlik": -0.028,
-    "bulutluluk_pct": 31.0,
+    "korku": 0.747,
+    "korku_pct": 99.1,
+    "korku_z": 2.39,
+    "basinc_hpa": 989.1,
+    "risk_istahi": -0.852,
+    "belirsizlik": 0.011,
+    "bulutluluk_pct": 35.0,
     "n_terms": 26,
-    "korku_7g_once": 0.493,
-    "korku_pct_30g_once": 69.6
+    "korku_7g_once": 0.461,
+    "korku_pct_30g_once": 67.3
   },
   "state_base_rates": {
     "design": {
@@ -52,11 +52,11 @@
       "güneşli": 30
     },
     "realized": {
-      "parçalı bulutlu": 45.3,
-      "güneşli": 29.8,
-      "bulutlu": 14.6,
+      "parçalı bulutlu": 45.5,
+      "güneşli": 29.7,
+      "bulutlu": 14.7,
       "sağanak": 7.2,
-      "fırtına": 3.0
+      "fırtına": 2.9
     }
   },
   "clusters_latest": [
@@ -64,43 +64,43 @@
       "id": "K1_istihdam",
       "name": "İstihdam ve gelir kaybı",
       "polarity": "fear",
-      "value": 1.36
+      "value": 1.45
     },
     {
       "id": "K2_borc",
       "name": "Borç, icra ve iflas baskısı",
       "polarity": "fear",
-      "value": 1.075
+      "value": 1.133
     },
     {
       "id": "K3_makro",
       "name": "Makroekonomik kriz algısı",
       "polarity": "fear",
-      "value": 0.15
+      "value": 0.284
     },
     {
       "id": "K4_guvenli_liman",
       "name": "Güvenli liman ve panik",
       "polarity": "fear",
-      "value": 0.28
+      "value": 0.473
     },
     {
       "id": "K5_gecim",
       "name": "Geçim sıkıntısı",
       "polarity": "fear",
-      "value": 0.376
+      "value": 0.396
     },
     {
       "id": "K6_risk_istahi",
       "name": "Risk iştahı ve iyimserlik",
       "polarity": "greed",
-      "value": -0.825
+      "value": -0.852
     },
     {
       "id": "K7_politika_belirsizlik",
       "name": "Politika belirsizliği",
       "polarity": "uncertainty",
-      "value": -0.028
+      "value": 0.011
     }
   ],
   "quality": {
@@ -144,7 +144,7 @@
     "riskten_kacis_date": "2026-11-20",
     "validity": {
       "n_weeks": 45,
-      "spearman": 0.222,
+      "spearman": 0.204,
       "start": "2026-01-16",
       "end": "2026-11-20"
     },
@@ -171,25 +171,25 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 3.2316,
+        "rmse_model": 3.2332,
         "rmse_ar1": 3.248,
         "rmse_rw": 3.1363,
         "ratio_ar1": 0.995,
-        "ratio_rw": 1.03,
+        "ratio_rw": 1.031,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.232,
-          "p": 0.4089,
+          "stat": 0.21,
+          "p": 0.4173,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.593,
-          "p": 0.941,
+          "stat": -1.62,
+          "p": 0.944,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.593,
-          "p": 0.941,
+          "stat": -1.62,
+          "p": 0.944,
           "n": 47
         },
         "hit_model": 0.383,
@@ -215,28 +215,28 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 4.9118,
+        "rmse_model": 4.9231,
         "rmse_ar1": 4.8888,
         "rmse_rw": 4.7667,
-        "ratio_ar1": 1.005,
-        "ratio_rw": 1.03,
+        "ratio_ar1": 1.007,
+        "ratio_rw": 1.033,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": -0.187,
-          "p": 0.5736,
+          "stat": -0.279,
+          "p": 0.6094,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.297,
-          "p": 0.8995,
+          "stat": -1.405,
+          "p": 0.9167,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.297,
-          "p": 0.8995,
+          "stat": -1.405,
+          "p": 0.9167,
           "n": 47
         },
-        "hit_model": 0.383,
+        "hit_model": 0.362,
         "hit_ar1": 0.426,
         "coverage": 0.894,
         "start": "2023-01",
@@ -259,25 +259,25 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 4.1781,
+        "rmse_model": 4.1794,
         "rmse_ar1": 4.2379,
         "rmse_rw": 4.0459,
         "ratio_ar1": 0.986,
         "ratio_rw": 1.033,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.362,
-          "p": 0.3594,
+          "stat": 0.354,
+          "p": 0.3624,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.556,
-          "p": 0.9368,
+          "stat": -1.573,
+          "p": 0.9387,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.556,
-          "p": 0.9368,
+          "stat": -1.573,
+          "p": 0.9387,
           "n": 47
         },
         "hit_model": 0.298,
@@ -303,28 +303,28 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 3.467,
+        "rmse_model": 3.4668,
         "rmse_ar1": 3.5033,
         "rmse_rw": 3.3977,
         "ratio_ar1": 0.99,
         "ratio_rw": 1.02,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.23,
-          "p": 0.4097,
+          "stat": 0.231,
+          "p": 0.4094,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -0.648,
-          "p": 0.7399,
+          "stat": -0.647,
+          "p": 0.7395,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -0.648,
-          "p": 0.7399,
+          "stat": -0.647,
+          "p": 0.7395,
           "n": 47
         },
-        "hit_model": 0.404,
+        "hit_model": 0.426,
         "hit_ar1": 0.511,
         "coverage": 0.851,
         "start": "2023-01",
@@ -347,7 +347,7 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 2.734,
+        "rmse_model": 2.7342,
         "rmse_ar1": 2.6422,
         "rmse_rw": 2.667,
         "ratio_ar1": 1.035,
@@ -359,8 +359,8 @@
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -0.462,
-          "p": 0.6769,
+          "stat": -0.463,
+          "p": 0.6771,
           "n": 47
         },
         "dm_vs_best": {
@@ -391,28 +391,28 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 3.8751,
+        "rmse_model": 3.8745,
         "rmse_ar1": 3.7647,
         "rmse_rw": 3.4951,
         "ratio_ar1": 1.029,
         "ratio_rw": 1.109,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": -0.914,
-          "p": 0.8171,
+          "stat": -0.909,
+          "p": 0.816,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -1.83,
-          "p": 0.9631,
+          "stat": -1.828,
+          "p": 0.9629,
           "n": 46
         },
         "dm_vs_best": {
-          "stat": -1.83,
-          "p": 0.9631,
+          "stat": -1.828,
+          "p": 0.9629,
           "n": 46
         },
-        "hit_model": 0.4,
+        "hit_model": 0.422,
         "hit_ar1": 0.4,
         "coverage": 0.848,
         "start": "2023-01",
@@ -423,40 +423,40 @@
         "status": "ok",
         "last_actual": 43.75,
         "last_month": "2026-10",
-        "model": 43.585,
-        "model_lo": 38.485,
-        "model_hi": 44.904,
+        "model": 43.671,
+        "model_lo": 38.571,
+        "model_hi": 44.992,
         "ar1": 43.955,
         "ar1_lo": 38.732,
         "ar1_hi": 45.217,
         "rw": 43.75,
         "rw_lo": 39.285,
         "rw_hi": 45.525,
-        "delta_model": -0.165,
+        "delta_model": -0.079,
         "delta_ar1": 0.205,
         "n_days": 15,
         "expected_days": 15,
         "alpha": 100,
         "contributions": [
           {
-            "feature": "d_K3_makro",
-            "value": -0.1678
+            "feature": "d_K5_gecim",
+            "value": -0.1445
           },
           {
-            "feature": "d_K5_gecim",
-            "value": -0.1586
+            "feature": "d_K3_makro",
+            "value": -0.1202
           },
           {
             "feature": "d_risk_istahi_gunluk",
-            "value": -0.1069
+            "value": -0.0982
           },
           {
             "feature": "d_K6_risk_istahi",
-            "value": -0.1069
+            "value": -0.0982
           },
           {
             "feature": "d_K1_istihdam",
-            "value": 0.096
+            "value": 0.0931
           }
         ]
       },
@@ -481,17 +481,17 @@
         "best_bench": "ar1",
         "dm_vs_ar1": {
           "stat": -0.845,
-          "p": 0.7986,
+          "p": 0.7987,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": 1.917,
+          "stat": 1.916,
           "p": 0.0308,
           "n": 46
         },
         "dm_vs_best": {
           "stat": -0.845,
-          "p": 0.7986,
+          "p": 0.7987,
           "n": 46
         },
         "hit_model": 0.609,
@@ -505,16 +505,16 @@
         "status": "ok",
         "last_actual": 23.89,
         "last_month": "2026-10",
-        "model": 23.765,
-        "model_lo": 22.25,
-        "model_hi": 24.982,
+        "model": 23.767,
+        "model_lo": 22.251,
+        "model_hi": 24.981,
         "ar1": 24.058,
         "ar1_lo": 22.509,
         "ar1_hi": 25.294,
         "rw": 23.89,
         "rw_lo": 22.16,
         "rw_hi": 24.9,
-        "delta_model": -0.125,
+        "delta_model": -0.123,
         "delta_ar1": 0.168,
         "n_days": 10,
         "expected_days": 10,
@@ -522,23 +522,23 @@
         "contributions": [
           {
             "feature": "d_risk_istahi_gunluk",
-            "value": -0.0869
+            "value": -0.0771
           },
           {
             "feature": "d_K6_risk_istahi",
-            "value": -0.0869
+            "value": -0.0771
           },
           {
             "feature": "d_K1_istihdam",
-            "value": -0.0649
+            "value": -0.0733
           },
           {
             "feature": "d_K5_gecim",
-            "value": -0.0554
+            "value": -0.0502
           },
           {
             "feature": "d_K3_makro",
-            "value": 0.0235
+            "value": 0.0185
           }
         ]
       },
@@ -555,25 +555,25 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 2.1574,
+        "rmse_model": 2.157,
         "rmse_ar1": 2.1199,
         "rmse_rw": 2.1302,
-        "ratio_ar1": 1.018,
+        "ratio_ar1": 1.017,
         "ratio_rw": 1.013,
         "best_bench": "ar1",
         "dm_vs_ar1": {
           "stat": -0.458,
-          "p": 0.6755,
+          "p": 0.6754,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -0.294,
-          "p": 0.6148,
+          "stat": -0.291,
+          "p": 0.614,
           "n": 46
         },
         "dm_vs_best": {
           "stat": -0.458,
-          "p": 0.6755,
+          "p": 0.6754,
           "n": 46
         },
         "hit_model": 0.587,
@@ -587,40 +587,40 @@
         "status": "ok",
         "last_actual": 2.58,
         "last_month": "2026-10",
-        "model": 2.996,
-        "model_lo": 0.788,
-        "model_hi": 6.578,
+        "model": 3.101,
+        "model_lo": 0.892,
+        "model_hi": 6.651,
         "ar1": 2.48,
         "ar1_lo": 0.453,
         "ar1_hi": 6.077,
         "rw": 2.58,
         "rw_lo": 0.321,
         "rw_hi": 6.406,
-        "delta_model": 0.416,
+        "delta_model": 0.521,
         "delta_ar1": -0.1,
-        "n_days": 19,
+        "n_days": 20,
         "expected_days": 30,
         "alpha": 100,
         "contributions": [
           {
             "feature": "d_K5_gecim",
-            "value": 0.2866
+            "value": 0.2562
           },
           {
             "feature": "d_korku_gunluk",
-            "value": 0.129
+            "value": 0.2029
           },
           {
             "feature": "d_K1_istihdam",
-            "value": 0.1031
+            "value": 0.115
           },
           {
             "feature": "d_K2_borc",
-            "value": -0.0538
+            "value": -0.0664
           },
           {
-            "feature": "ar",
-            "value": -0.0349
+            "feature": "d_K4_guvenli_liman",
+            "value": 0.0386
           }
         ]
       },
@@ -641,7 +641,7 @@
       "component": "korku",
       "status": "ok",
       "jump": 0.094,
-      "jump_pct": 66.2,
+      "jump_pct": 66.4,
       "peak_pct": null
     },
     {
@@ -659,7 +659,7 @@
       "component": "korku",
       "status": "ok",
       "jump": 0.377,
-      "jump_pct": 92.8,
+      "jump_pct": 92.7,
       "peak_pct": 100.0
     },
     {
@@ -686,7 +686,7 @@
       "component": "korku",
       "status": "ok",
       "jump": -0.323,
-      "jump_pct": 8.3,
+      "jump_pct": 8.4,
       "peak_pct": 37.0
     }
   ]
