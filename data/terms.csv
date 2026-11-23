@@ -1,64 +1,64 @@
 id,cluster,query,attention,eligible,z7,zero_share_365
-ek_is,K1_istihdam,ek iş + evden ek iş + ek gelir,False,True,1.099,0.033
-is_ilanlari,K1_istihdam,iş ilanları + iş arıyorum,True,True,2.769,0.0
-iskur,K1_istihdam,işkur + işkur işsizlik + iş kur başvuru,False,True,4.037,0.0
-issizlik_maasi,K1_istihdam,işsizlik maaşı + işsizlik ödeneği + işsizlik maaşı başvurusu,False,True,0.846,0.0
-isten_cikarma,K1_istihdam,işten çıkarma + işten çıkarıldım + işten atıldım,False,False,,0.23
-kidem_tazminati,K1_istihdam,kıdem tazminatı + kıdem tazminatı hesaplama,False,True,0.062,0.0
-maas_odenmedi,K1_istihdam,maaş ödenmedi + maaşımı alamıyorum + maaş alacağı,False,False,,0.915
-ucretsiz_izin,K1_istihdam,ücretsiz izin + kısa çalışma ödeneği,False,True,0.978,0.156
-borc_kapatma,K2_borc,borç kapatma kredisi + borç transferi kredisi,False,False,,0.682
-findeks,K2_borc,findeks + kredi notu sorgulama + kara liste,False,True,0.312,0.005
-icra,K2_borc,icra takibi + icra + haciz,False,True,0.834,0.0
-iflas,K2_borc,iflas + iflas etti + iflas eden firmalar,False,True,1.005,0.005
-ihtiyac_kredisi,K2_borc,ihtiyaç kredisi + ihtiyaç kredisi faiz oranları + en uygun ihtiyaç kredisi,False,True,1.987,0.0
-karsiliksiz_cek,K2_borc,karşılıksız çek + senet protesto,False,False,,0.666
-konkordato,K2_borc,konkordato + konkordato ilan eden firmalar,False,True,0.59,0.019
-kredi_karti_asgari,K2_borc,kredi kartı asgari ödeme + asgari ödeme tutarı + kredi kartı borcu,False,True,2.765,0.014
-kredi_yapilandirma,K2_borc,kredi yapılandırma + borç yapılandırma + kredi kartı yapılandırma,False,True,0.969,0.027
-varlik_yonetim,K2_borc,varlık yönetim şirketi + borç affı,False,False,,0.912
-devaluasyon,K3_makro,devalüasyon + kur şoku,False,False,,0.792
-ekonomik_kriz,K3_makro,ekonomik kriz + kriz geliyor mu + ekonomi çöküyor,False,False,,0.956
-enflasyon,K3_makro,enflasyon + enflasyon oranı + enflasyon ne kadar,False,True,-0.535,0.0
-faiz_karari,K3_makro,faiz kararı + merkez bankası faiz kararı + ppk,False,True,0.502,0.03
-kredi_notu,K3_makro,kredi notu + fitch türkiye + moody's türkiye,False,True,0.35,0.033
-moratoryum,K3_makro,moratoryum + imf + imf anlaşması,False,False,,0.216
-resesyon,K3_makro,resesyon + stagflasyon + durgunluk,False,False,,0.866
-rezerv,K3_makro,merkez bankası rezervleri + net rezerv + cari açık,False,False,,0.948
-altin_fiyatlari,K4_guvenli_liman,altın fiyatları + gram altın + çeyrek altın,True,True,0.675,0.0
-altin_ne_olur,K4_guvenli_liman,altın ne olur + altın alınır mı + altın yükselir mi,False,True,1.25,0.011
-borsa_neden_dusuyor,K4_guvenli_liman,borsa neden düşüyor + borsa çöktü + borsa çakıldı,False,False,,0.94
-devre_kesici,K4_guvenli_liman,devre kesici + borsa devre kesici,False,False,,0.912
-dolar_ne_olur,K4_guvenli_liman,dolar ne olur + dolar kaç olur + dolar yükselir mi + dolar düşer mi,False,True,0.698,0.085
-dolar_rekor,K4_guvenli_liman,dolar rekor + dolar uçtu + dolar fırladı,False,False,,0.986
-doviz_bozdur,K4_guvenli_liman,döviz bozdurmak + altın bozdurmak + dolar bozdur,False,False,,0.956
-euro_ne_olur,K4_guvenli_liman,euro ne olur + euro yükselir mi,False,False,,0.879
-hisse_sat,K4_guvenli_liman,hisse sat + zarar kes + stop loss,False,False,,0.773
-kkm,K4_guvenli_liman,kur korumalı mevduat + kkm,False,False,,0.838
-mevduat_faizi,K4_guvenli_liman,mevduat faizi + en yüksek mevduat faizi + vadeli mevduat,False,True,0.525,0.0
-para_piyasasi_fonu,K4_guvenli_liman,para piyasası fonu + likit fon + fon getirileri,False,True,-0.378,0.06
-asgari_ucret,K5_gecim,asgari ücret + asgari ücret zammı + asgari ücret ne kadar,False,True,0.734,0.0
-emekli_maasi,K5_gecim,emekli maaşı + emekli zammı + emekli maaşı ne kadar,False,True,2.663,0.0
-enerji_zammi,K5_gecim,elektrik zammı + doğalgaz zammı + benzin zammı,False,False,,0.866
-fatura,K5_gecim,faturayı ödeyemiyorum + fatura yapılandırma + elektrik borcu,False,False,,0.945
-gecinemiyorum,K5_gecim,geçinemiyorum + geçim sıkıntısı + maaş yetmiyor,False,False,,0.97
-gida,K5_gecim,et fiyatları + gıda fiyatları + ekmek zammı,False,True,0.134,0.016
-kira_zam,K5_gecim,kira zam oranı + kira artış oranı + kira zammı hesaplama,False,True,-0.32,0.0
-pahalilik,K5_gecim,pahalılık + market fiyatları + fiyatlar neden artıyor,False,True,0.206,0.011
-sosyal_yardim,K5_gecim,sosyal yardım başvurusu + sosyal yardım + aile destek programı,False,True,-0.257,0.008
-zam,K5_gecim,zam + zam geldi + zam oranı,False,True,-0.258,0.0
+ek_is,K1_istihdam,ek iş + evden ek iş + ek gelir,False,True,0.981,0.027
+is_ilanlari,K1_istihdam,iş ilanları + iş arıyorum,True,True,2.765,0.0
+iskur,K1_istihdam,işkur + işkur işsizlik + iş kur başvuru,False,True,4.122,0.0
+issizlik_maasi,K1_istihdam,işsizlik maaşı + işsizlik ödeneği + işsizlik maaşı başvurusu,False,True,0.8,0.0
+isten_cikarma,K1_istihdam,işten çıkarma + işten çıkarıldım + işten atıldım,False,False,,0.227
+kidem_tazminati,K1_istihdam,kıdem tazminatı + kıdem tazminatı hesaplama,False,True,0.194,0.0
+maas_odenmedi,K1_istihdam,maaş ödenmedi + maaşımı alamıyorum + maaş alacağı,False,False,,0.918
+ucretsiz_izin,K1_istihdam,ücretsiz izin + kısa çalışma ödeneği,False,True,1.073,0.184
+borc_kapatma,K2_borc,borç kapatma kredisi + borç transferi kredisi,False,False,,0.685
+findeks,K2_borc,findeks + kredi notu sorgulama + kara liste,False,True,0.274,0.003
+icra,K2_borc,icra takibi + icra + haciz,False,True,0.777,0.0
+iflas,K2_borc,iflas + iflas etti + iflas eden firmalar,False,True,0.881,0.005
+ihtiyac_kredisi,K2_borc,ihtiyaç kredisi + ihtiyaç kredisi faiz oranları + en uygun ihtiyaç kredisi,False,True,2.046,0.0
+karsiliksiz_cek,K2_borc,karşılıksız çek + senet protesto,False,False,,0.688
+konkordato,K2_borc,konkordato + konkordato ilan eden firmalar,False,True,0.406,0.019
+kredi_karti_asgari,K2_borc,kredi kartı asgari ödeme + asgari ödeme tutarı + kredi kartı borcu,False,True,2.988,0.008
+kredi_yapilandirma,K2_borc,kredi yapılandırma + borç yapılandırma + kredi kartı yapılandırma,False,True,1.078,0.025
+varlik_yonetim,K2_borc,varlık yönetim şirketi + borç affı,False,False,,0.923
+devaluasyon,K3_makro,devalüasyon + kur şoku,False,False,,0.789
+ekonomik_kriz,K3_makro,ekonomik kriz + kriz geliyor mu + ekonomi çöküyor,False,False,,0.953
+enflasyon,K3_makro,enflasyon + enflasyon oranı + enflasyon ne kadar,False,True,-0.598,0.003
+faiz_karari,K3_makro,faiz kararı + merkez bankası faiz kararı + ppk,False,True,0.658,0.041
+kredi_notu,K3_makro,kredi notu + fitch türkiye + moody's türkiye,False,True,0.438,0.041
+moratoryum,K3_makro,moratoryum + imf + imf anlaşması,False,False,,0.219
+resesyon,K3_makro,resesyon + stagflasyon + durgunluk,False,False,,0.879
+rezerv,K3_makro,merkez bankası rezervleri + net rezerv + cari açık,False,False,,0.937
+altin_fiyatlari,K4_guvenli_liman,altın fiyatları + gram altın + çeyrek altın,True,True,0.749,0.0
+altin_ne_olur,K4_guvenli_liman,altın ne olur + altın alınır mı + altın yükselir mi,False,True,1.279,0.008
+borsa_neden_dusuyor,K4_guvenli_liman,borsa neden düşüyor + borsa çöktü + borsa çakıldı,False,False,,0.937
+devre_kesici,K4_guvenli_liman,devre kesici + borsa devre kesici,False,False,,0.923
+dolar_ne_olur,K4_guvenli_liman,dolar ne olur + dolar kaç olur + dolar yükselir mi + dolar düşer mi,False,True,0.6,0.085
+dolar_rekor,K4_guvenli_liman,dolar rekor + dolar uçtu + dolar fırladı,False,False,,0.989
+doviz_bozdur,K4_guvenli_liman,döviz bozdurmak + altın bozdurmak + dolar bozdur,False,False,,0.951
+euro_ne_olur,K4_guvenli_liman,euro ne olur + euro yükselir mi,False,False,,0.893
+hisse_sat,K4_guvenli_liman,hisse sat + zarar kes + stop loss,False,False,,0.778
+kkm,K4_guvenli_liman,kur korumalı mevduat + kkm,False,False,,0.882
+mevduat_faizi,K4_guvenli_liman,mevduat faizi + en yüksek mevduat faizi + vadeli mevduat,False,True,0.408,0.0
+para_piyasasi_fonu,K4_guvenli_liman,para piyasası fonu + likit fon + fon getirileri,False,True,-0.591,0.055
+asgari_ucret,K5_gecim,asgari ücret + asgari ücret zammı + asgari ücret ne kadar,False,True,0.506,0.0
+emekli_maasi,K5_gecim,emekli maaşı + emekli zammı + emekli maaşı ne kadar,False,True,3.219,0.0
+enerji_zammi,K5_gecim,elektrik zammı + doğalgaz zammı + benzin zammı,False,False,,0.86
+fatura,K5_gecim,faturayı ödeyemiyorum + fatura yapılandırma + elektrik borcu,False,False,,0.937
+gecinemiyorum,K5_gecim,geçinemiyorum + geçim sıkıntısı + maaş yetmiyor,False,False,,0.973
+gida,K5_gecim,et fiyatları + gıda fiyatları + ekmek zammı,False,True,0.118,0.014
+kira_zam,K5_gecim,kira zam oranı + kira artış oranı + kira zammı hesaplama,False,True,-0.495,0.0
+pahalilik,K5_gecim,pahalılık + market fiyatları + fiyatlar neden artıyor,False,True,-0.054,0.014
+sosyal_yardim,K5_gecim,sosyal yardım başvurusu + sosyal yardım + aile destek programı,False,True,-0.29,0.011
+zam,K5_gecim,zam + zam geldi + zam oranı,False,True,-0.316,0.0
 borsa_rekor,K6_risk_istahi,borsa rekor + bist 100 rekor + borsa yükseliyor,False,False,,0.69
-borsaya_giris,K6_risk_istahi,borsaya nasıl girilir + yatırım hesabı açmak + borsa hesabı,False,False,,0.945
-halka_arz,K6_risk_istahi,halka arz + halka arz takvimi + yeni halka arz,False,True,-1.142,0.0
-hisse_onerisi,K6_risk_istahi,hisse önerisi + hangi hisse alınır + alınacak hisseler,False,False,,0.94
-kaldirac,K6_risk_istahi,kaldıraçlı işlem + viop + forex,False,True,-1.067,0.0
-kripto,K6_risk_istahi,bitcoin + kripto para + bitcoin al,True,True,0.3,0.0
-tavan_hisse,K6_risk_istahi,tavan hisse + tavan yapan hisseler,False,False,,0.901
-temettu,K6_risk_istahi,temettü + temettü veren hisseler + temettü takvimi,False,True,-0.53,0.003
-erken_secim,K7_politika_belirsizlik,erken seçim + seçim anketi + seçim ne zaman,False,True,-0.016,0.003
-kabine,K7_politika_belirsizlik,kabine değişikliği + bakan istifa + bakan görevden alındı,False,False,,0.827
-mb_baskani,K7_politika_belirsizlik,merkez bankası başkanı + merkez bankası başkanı görevden,False,False,,0.921
-ohal,K7_politika_belirsizlik,ohal + sıkıyönetim + sokağa çıkma yasağı,False,False,,0.773
-protesto,K7_politika_belirsizlik,protesto + miting + gösteri,False,True,0.228,0.005
-savas,K7_politika_belirsizlik,savaş + sınır ötesi operasyon + seferberlik,False,True,-0.052,0.0
-yaptirim,K7_politika_belirsizlik,yaptırım + ambargo + abd yaptırım,False,False,,0.496
+borsaya_giris,K6_risk_istahi,borsaya nasıl girilir + yatırım hesabı açmak + borsa hesabı,False,False,,0.951
+halka_arz,K6_risk_istahi,halka arz + halka arz takvimi + yeni halka arz,False,True,-1.154,0.0
+hisse_onerisi,K6_risk_istahi,hisse önerisi + hangi hisse alınır + alınacak hisseler,False,False,,0.953
+kaldirac,K6_risk_istahi,kaldıraçlı işlem + viop + forex,False,True,-1.112,0.0
+kripto,K6_risk_istahi,bitcoin + kripto para + bitcoin al,True,True,0.107,0.0
+tavan_hisse,K6_risk_istahi,tavan hisse + tavan yapan hisseler,False,False,,0.918
+temettu,K6_risk_istahi,temettü + temettü veren hisseler + temettü takvimi,False,True,-0.678,0.003
+erken_secim,K7_politika_belirsizlik,erken seçim + seçim anketi + seçim ne zaman,False,True,0.083,0.003
+kabine,K7_politika_belirsizlik,kabine değişikliği + bakan istifa + bakan görevden alındı,False,False,,0.841
+mb_baskani,K7_politika_belirsizlik,merkez bankası başkanı + merkez bankası başkanı görevden,False,False,,0.932
+ohal,K7_politika_belirsizlik,ohal + sıkıyönetim + sokağa çıkma yasağı,False,False,,0.767
+protesto,K7_politika_belirsizlik,protesto + miting + gösteri,False,True,0.193,0.005
+savas,K7_politika_belirsizlik,savaş + sınır ötesi operasyon + seferberlik,False,True,-0.04,0.0
+yaptirim,K7_politika_belirsizlik,yaptırım + ambargo + abd yaptırım,False,False,,0.512
