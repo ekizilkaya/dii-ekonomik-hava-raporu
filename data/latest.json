@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T02:40:23.573387+00:00",
-  "as_of": "2026-11-24T02:40:23.573420+00:00",
+  "generated_at": "2026-11-24T12:10:10.162791+00:00",
+  "as_of": "2026-11-24T12:10:10.162803+00:00",
   "method_version": "v0.2",
   "stations": {
     "evds": {
@@ -24,24 +24,24 @@
   },
   "data_window": {
     "trends_start": "2016-01-01",
-    "trends_end": "2026-11-22",
+    "trends_end": "2026-11-23",
     "signal_start": "2018-11-02"
   },
   "headline": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "durum": "fırtına",
     "ikon": "storm",
     "uyari_kodu": "kırmızı",
-    "korku": 0.723,
+    "korku": 0.724,
     "korku_pct": 98.5,
-    "korku_z": 2.27,
-    "basinc_hpa": 990.3,
-    "risk_istahi": -0.981,
-    "belirsizlik": 0.079,
-    "bulutluluk_pct": 27.0,
+    "korku_z": 2.3,
+    "basinc_hpa": 990.0,
+    "risk_istahi": -0.935,
+    "belirsizlik": 0.033,
+    "bulutluluk_pct": 31.0,
     "n_terms": 26,
-    "korku_7g_once": 0.608,
-    "korku_pct_30g_once": 73.6
+    "korku_7g_once": 0.63,
+    "korku_pct_30g_once": 68.8
   },
   "state_base_rates": {
     "design": {
@@ -52,11 +52,11 @@
       "güneşli": 30
     },
     "realized": {
-      "parçalı bulutlu": 45.2,
-      "güneşli": 29.8,
-      "bulutlu": 14.7,
-      "sağanak": 7.1,
-      "fırtına": 3.1
+      "parçalı bulutlu": 45.5,
+      "güneşli": 29.7,
+      "bulutlu": 14.6,
+      "sağanak": 7.2,
+      "fırtına": 3.0
     }
   },
   "clusters_latest": [
@@ -64,43 +64,43 @@
       "id": "K1_istihdam",
       "name": "İstihdam ve gelir kaybı",
       "polarity": "fear",
-      "value": 1.434
+      "value": 1.323
     },
     {
       "id": "K2_borc",
       "name": "Borç, icra ve iflas baskısı",
       "polarity": "fear",
-      "value": 1.207
+      "value": 1.06
     },
     {
       "id": "K3_makro",
       "name": "Makroekonomik kriz algısı",
       "polarity": "fear",
-      "value": 0.166
+      "value": 0.255
     },
     {
       "id": "K4_guvenli_liman",
       "name": "Güvenli liman ve panik",
       "polarity": "fear",
-      "value": 0.424
+      "value": 0.603
     },
     {
       "id": "K5_gecim",
       "name": "Geçim sıkıntısı",
       "polarity": "fear",
-      "value": 0.384
+      "value": 0.379
     },
     {
       "id": "K6_risk_istahi",
       "name": "Risk iştahı ve iyimserlik",
       "polarity": "greed",
-      "value": -0.981
+      "value": -0.935
     },
     {
       "id": "K7_politika_belirsizlik",
       "name": "Politika belirsizliği",
       "polarity": "uncertainty",
-      "value": 0.079
+      "value": 0.033
     }
   ],
   "quality": {
@@ -139,25 +139,25 @@
     "rule": "önceki 365 günde sıfır payı > %20 olan terim o gün dışarıda"
   },
   "tefas": {
-    "last_date": "2026-11-23",
-    "riskten_kacis": -0.38,
-    "riskten_kacis_date": "2026-11-23",
+    "last_date": "2026-11-24",
+    "riskten_kacis": -0.54,
+    "riskten_kacis_date": "2026-11-24",
     "validity": {
-      "n_weeks": 45,
-      "spearman": 0.187,
+      "n_weeks": 46,
+      "spearman": 0.202,
       "start": "2026-01-16",
-      "end": "2026-11-20"
+      "end": "2026-11-27"
     },
     "akim20_last": {
-      "para_piyasasi": 97.73,
-      "hisse": 3.1,
-      "doviz_eurobond": -16.04,
-      "altin_kiymetli": -12.01,
-      "serbest": -223.11,
-      "borclanma": 0.24,
-      "degisken_karma": -3.25,
-      "katilim": -3.11,
-      "fon_sepeti": -1.95
+      "para_piyasasi": 92.06,
+      "hisse": 4.24,
+      "doviz_eurobond": -23.26,
+      "altin_kiymetli": -12.8,
+      "serbest": -258.9,
+      "borclanma": -0.54,
+      "degisken_karma": -3.35,
+      "katilim": 0.8,
+      "fon_sepeti": -2.18
     }
   },
   "nowcasts": [
@@ -171,25 +171,25 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 3.2335,
+        "rmse_model": 3.2327,
         "rmse_ar1": 3.248,
         "rmse_rw": 3.1363,
-        "ratio_ar1": 0.996,
+        "ratio_ar1": 0.995,
         "ratio_rw": 1.031,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.205,
-          "p": 0.4192,
+          "stat": 0.216,
+          "p": 0.4148,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.626,
-          "p": 0.9446,
+          "stat": -1.612,
+          "p": 0.9431,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.626,
-          "p": 0.9446,
+          "stat": -1.612,
+          "p": 0.9431,
           "n": 47
         },
         "hit_model": 0.383,
@@ -215,25 +215,25 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 4.9166,
+        "rmse_model": 4.9162,
         "rmse_ar1": 4.8888,
         "rmse_rw": 4.7667,
         "ratio_ar1": 1.006,
         "ratio_rw": 1.031,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": -0.226,
-          "p": 0.5888,
+          "stat": -0.223,
+          "p": 0.5879,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.344,
-          "p": 0.9072,
+          "stat": -1.341,
+          "p": 0.9067,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.344,
-          "p": 0.9072,
+          "stat": -1.341,
+          "p": 0.9067,
           "n": 47
         },
         "hit_model": 0.383,
@@ -259,25 +259,25 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 4.1801,
+        "rmse_model": 4.1794,
         "rmse_ar1": 4.2379,
         "rmse_rw": 4.0459,
         "ratio_ar1": 0.986,
         "ratio_rw": 1.033,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.35,
-          "p": 0.364,
+          "stat": 0.354,
+          "p": 0.3624,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.581,
-          "p": 0.9397,
+          "stat": -1.573,
+          "p": 0.9387,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.581,
-          "p": 0.9397,
+          "stat": -1.573,
+          "p": 0.9387,
           "n": 47
         },
         "hit_model": 0.298,
@@ -303,25 +303,25 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 3.4665,
+        "rmse_model": 3.4667,
         "rmse_ar1": 3.5033,
         "rmse_rw": 3.3977,
         "ratio_ar1": 0.99,
         "ratio_rw": 1.02,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.232,
-          "p": 0.4087,
+          "stat": 0.231,
+          "p": 0.4091,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -0.644,
-          "p": 0.7387,
+          "stat": -0.646,
+          "p": 0.7392,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -0.644,
-          "p": 0.7387,
+          "stat": -0.646,
+          "p": 0.7392,
           "n": 47
         },
         "hit_model": 0.404,
@@ -347,25 +347,25 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 2.7423,
+        "rmse_model": 2.7546,
         "rmse_ar1": 2.6422,
         "rmse_rw": 2.667,
-        "ratio_ar1": 1.038,
-        "ratio_rw": 1.028,
+        "ratio_ar1": 1.043,
+        "ratio_rw": 1.033,
         "best_bench": "ar1",
         "dm_vs_ar1": {
-          "stat": -0.565,
-          "p": 0.7125,
+          "stat": -0.632,
+          "p": 0.7348,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -0.521,
-          "p": 0.6974,
+          "stat": -0.604,
+          "p": 0.7254,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -0.565,
-          "p": 0.7125,
+          "stat": -0.632,
+          "p": 0.7348,
           "n": 47
         },
         "hit_model": 0.489,
@@ -391,25 +391,25 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 3.8338,
+        "rmse_model": 3.8332,
         "rmse_ar1": 3.7259,
         "rmse_rw": 3.4585,
         "ratio_ar1": 1.029,
-        "ratio_rw": 1.109,
+        "ratio_rw": 1.108,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": -0.903,
-          "p": 0.8145,
+          "stat": -0.899,
+          "p": 0.8132,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.827,
-          "p": 0.9629,
+          "stat": -1.824,
+          "p": 0.9627,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.827,
-          "p": 0.9629,
+          "stat": -1.824,
+          "p": 0.9627,
           "n": 47
         },
         "hit_model": 0.435,
@@ -435,25 +435,25 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 1.6882,
+        "rmse_model": 1.6883,
         "rmse_ar1": 1.584,
         "rmse_rw": 1.836,
         "ratio_ar1": 1.066,
-        "ratio_rw": 0.919,
+        "ratio_rw": 0.92,
         "best_bench": "ar1",
         "dm_vs_ar1": {
-          "stat": -0.849,
-          "p": 0.7998,
+          "stat": -0.85,
+          "p": 0.8,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": 1.911,
-          "p": 0.0311,
+          "stat": 1.91,
+          "p": 0.0312,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -0.849,
-          "p": 0.7998,
+          "stat": -0.85,
+          "p": 0.8,
           "n": 47
         },
         "hit_model": 0.596,
@@ -479,25 +479,25 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 2.1579,
+        "rmse_model": 2.1603,
         "rmse_ar1": 2.1199,
         "rmse_rw": 2.1302,
-        "ratio_ar1": 1.018,
-        "ratio_rw": 1.013,
+        "ratio_ar1": 1.019,
+        "ratio_rw": 1.014,
         "best_bench": "ar1",
         "dm_vs_ar1": {
-          "stat": -0.468,
-          "p": 0.6789,
+          "stat": -0.49,
+          "p": 0.6867,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -0.3,
-          "p": 0.6171,
+          "stat": -0.324,
+          "p": 0.6261,
           "n": 46
         },
         "dm_vs_best": {
-          "stat": -0.468,
-          "p": 0.6789,
+          "stat": -0.49,
+          "p": 0.6867,
           "n": 46
         },
         "hit_model": 0.565,
@@ -511,40 +511,40 @@
         "status": "ok",
         "last_actual": 2.58,
         "last_month": "2026-10",
-        "model": 2.889,
-        "model_lo": 0.681,
-        "model_hi": 6.467,
+        "model": 2.902,
+        "model_lo": 0.693,
+        "model_hi": 6.483,
         "ar1": 2.48,
         "ar1_lo": 0.453,
         "ar1_hi": 6.077,
         "rw": 2.58,
         "rw_lo": 0.321,
         "rw_hi": 6.406,
-        "delta_model": 0.31,
+        "delta_model": 0.322,
         "delta_ar1": -0.1,
-        "n_days": 22,
+        "n_days": 23,
         "expected_days": 30,
         "alpha": 300,
         "contributions": [
           {
-            "feature": "d_korku_gunluk",
-            "value": 0.1253
+            "feature": "d_K5_gecim",
+            "value": 0.1333
           },
           {
-            "feature": "d_K5_gecim",
-            "value": 0.1212
+            "feature": "d_korku_gunluk",
+            "value": 0.1309
           },
           {
             "feature": "d_K1_istihdam",
-            "value": 0.0689
-          },
-          {
-            "feature": "d_K4_guvenli_liman",
-            "value": 0.0277
+            "value": 0.067
           },
           {
             "feature": "ar",
             "value": -0.0221
+          },
+          {
+            "feature": "d_K4_guvenli_liman",
+            "value": 0.0155
           }
         ]
       },
@@ -565,7 +565,7 @@
       "component": "korku",
       "status": "ok",
       "jump": 0.094,
-      "jump_pct": 66.1,
+      "jump_pct": 66.3,
       "peak_pct": null
     },
     {
@@ -610,7 +610,7 @@
       "component": "korku",
       "status": "ok",
       "jump": -0.323,
-      "jump_pct": 8.4,
+      "jump_pct": 8.2,
       "peak_pct": 37.0
     }
   ]
