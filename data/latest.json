@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T23:48:06.743318+00:00",
-  "as_of": "2026-11-27T23:48:06.743345+00:00",
+  "generated_at": "2026-11-28T12:08:48.454333+00:00",
+  "as_of": "2026-11-28T12:08:48.454345+00:00",
   "method_version": "v0.2",
   "stations": {
     "evds": {
@@ -24,24 +24,24 @@
   },
   "data_window": {
     "trends_start": "2016-01-01",
-    "trends_end": "2026-11-26",
+    "trends_end": "2026-11-27",
     "signal_start": "2018-11-02"
   },
   "headline": {
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "durum": "fırtına",
     "ikon": "storm",
     "uyari_kodu": "kırmızı",
-    "korku": 0.649,
-    "korku_pct": 96.2,
-    "korku_z": 1.98,
-    "basinc_hpa": 993.2,
-    "risk_istahi": -0.413,
-    "belirsizlik": -0.067,
+    "korku": 0.618,
+    "korku_pct": 95.3,
+    "korku_z": 1.89,
+    "basinc_hpa": 994.1,
+    "risk_istahi": -0.324,
+    "belirsizlik": -0.053,
     "bulutluluk_pct": 27.0,
     "n_terms": 26,
-    "korku_7g_once": 0.703,
-    "korku_pct_30g_once": 79.3
+    "korku_7g_once": 0.804,
+    "korku_pct_30g_once": 76.3
   },
   "state_base_rates": {
     "design": {
@@ -52,11 +52,11 @@
       "güneşli": 30
     },
     "realized": {
-      "parçalı bulutlu": 45.1,
-      "güneşli": 29.8,
-      "bulutlu": 14.9,
+      "parçalı bulutlu": 45.5,
+      "güneşli": 29.7,
+      "bulutlu": 14.7,
       "sağanak": 7.0,
-      "fırtına": 3.3
+      "fırtına": 3.1
     }
   },
   "clusters_latest": [
@@ -64,43 +64,43 @@
       "id": "K1_istihdam",
       "name": "İstihdam ve gelir kaybı",
       "polarity": "fear",
-      "value": 1.154
+      "value": 1.052
     },
     {
       "id": "K2_borc",
       "name": "Borç, icra ve iflas baskısı",
       "polarity": "fear",
-      "value": 0.893
+      "value": 0.882
     },
     {
       "id": "K3_makro",
       "name": "Makroekonomik kriz algısı",
       "polarity": "fear",
-      "value": 0.344
+      "value": 0.454
     },
     {
       "id": "K4_guvenli_liman",
       "name": "Güvenli liman ve panik",
       "polarity": "fear",
-      "value": 0.479
+      "value": 0.242
     },
     {
       "id": "K5_gecim",
       "name": "Geçim sıkıntısı",
       "polarity": "fear",
-      "value": 0.374
+      "value": 0.46
     },
     {
       "id": "K6_risk_istahi",
       "name": "Risk iştahı ve iyimserlik",
       "polarity": "greed",
-      "value": -0.413
+      "value": -0.324
     },
     {
       "id": "K7_politika_belirsizlik",
       "name": "Politika belirsizliği",
       "polarity": "uncertainty",
-      "value": -0.067
+      "value": -0.053
     }
   ],
   "quality": {
@@ -144,7 +144,7 @@
     "riskten_kacis_date": "2026-11-27",
     "validity": {
       "n_weeks": 46,
-      "spearman": 0.22,
+      "spearman": 0.18,
       "start": "2026-01-16",
       "end": "2026-11-27"
     },
@@ -171,25 +171,25 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 3.232,
+        "rmse_model": 3.2343,
         "rmse_ar1": 3.248,
         "rmse_rw": 3.1363,
-        "ratio_ar1": 0.995,
+        "ratio_ar1": 0.996,
         "ratio_rw": 1.031,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.226,
-          "p": 0.411,
+          "stat": 0.194,
+          "p": 0.4236,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.6,
-          "p": 0.9418,
+          "stat": -1.639,
+          "p": 0.9459,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.6,
-          "p": 0.9418,
+          "stat": -1.639,
+          "p": 0.9459,
           "n": 47
         },
         "hit_model": 0.383,
@@ -215,28 +215,28 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 4.9153,
+        "rmse_model": 4.9197,
         "rmse_ar1": 4.8888,
         "rmse_rw": 4.7667,
-        "ratio_ar1": 1.005,
-        "ratio_rw": 1.031,
+        "ratio_ar1": 1.006,
+        "ratio_rw": 1.032,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": -0.216,
-          "p": 0.585,
+          "stat": -0.252,
+          "p": 0.5988,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.333,
-          "p": 0.9054,
+          "stat": -1.374,
+          "p": 0.9119,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.333,
-          "p": 0.9054,
+          "stat": -1.374,
+          "p": 0.9119,
           "n": 47
         },
-        "hit_model": 0.383,
+        "hit_model": 0.362,
         "hit_ar1": 0.426,
         "coverage": 0.894,
         "start": "2023-01",
@@ -259,28 +259,28 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 4.1785,
+        "rmse_model": 4.1808,
         "rmse_ar1": 4.2379,
         "rmse_rw": 4.0459,
-        "ratio_ar1": 0.986,
+        "ratio_ar1": 0.987,
         "ratio_rw": 1.033,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.36,
-          "p": 0.3603,
+          "stat": 0.346,
+          "p": 0.3656,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.562,
-          "p": 0.9374,
+          "stat": -1.59,
+          "p": 0.9406,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.562,
-          "p": 0.9374,
+          "stat": -1.59,
+          "p": 0.9406,
           "n": 47
         },
-        "hit_model": 0.319,
+        "hit_model": 0.298,
         "hit_ar1": 0.404,
         "coverage": 0.851,
         "start": "2023-01",
@@ -303,28 +303,28 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 3.467,
+        "rmse_model": 3.4665,
         "rmse_ar1": 3.5033,
         "rmse_rw": 3.3977,
-        "ratio_ar1": 0.99,
+        "ratio_ar1": 0.989,
         "ratio_rw": 1.02,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": 0.229,
-          "p": 0.4098,
+          "stat": 0.232,
+          "p": 0.4087,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -0.648,
-          "p": 0.74,
+          "stat": -0.644,
+          "p": 0.7386,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -0.648,
-          "p": 0.74,
+          "stat": -0.644,
+          "p": 0.7386,
           "n": 47
         },
-        "hit_model": 0.404,
+        "hit_model": 0.426,
         "hit_ar1": 0.511,
         "coverage": 0.851,
         "start": "2023-01",
@@ -347,25 +347,25 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 2.7526,
+        "rmse_model": 2.7531,
         "rmse_ar1": 2.6422,
         "rmse_rw": 2.667,
         "ratio_ar1": 1.042,
         "ratio_rw": 1.032,
         "best_bench": "ar1",
         "dm_vs_ar1": {
-          "stat": -0.622,
-          "p": 0.7315,
+          "stat": -0.624,
+          "p": 0.7321,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -0.591,
-          "p": 0.7212,
+          "stat": -0.593,
+          "p": 0.7221,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -0.622,
-          "p": 0.7315,
+          "stat": -0.624,
+          "p": 0.7321,
           "n": 47
         },
         "hit_model": 0.489,
@@ -391,28 +391,28 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 3.8352,
+        "rmse_model": 3.8339,
         "rmse_ar1": 3.7259,
         "rmse_rw": 3.4585,
         "ratio_ar1": 1.029,
         "ratio_rw": 1.109,
         "best_bench": "rw",
         "dm_vs_ar1": {
-          "stat": -0.915,
-          "p": 0.8176,
+          "stat": -0.905,
+          "p": 0.8148,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": -1.834,
-          "p": 0.9634,
+          "stat": -1.828,
+          "p": 0.9629,
           "n": 47
         },
         "dm_vs_best": {
-          "stat": -1.834,
-          "p": 0.9634,
+          "stat": -1.828,
+          "p": 0.9629,
           "n": 47
         },
-        "hit_model": 0.413,
+        "hit_model": 0.435,
         "hit_ar1": 0.391,
         "coverage": 0.851,
         "start": "2023-01",
@@ -435,7 +435,7 @@
       "p_holm": 1.0,
       "n_oos": 47,
       "metrics": {
-        "rmse_model": 1.6883,
+        "rmse_model": 1.6882,
         "rmse_ar1": 1.584,
         "rmse_rw": 1.836,
         "ratio_ar1": 1.066,
@@ -443,20 +443,20 @@
         "best_bench": "ar1",
         "dm_vs_ar1": {
           "stat": -0.849,
-          "p": 0.8,
+          "p": 0.7998,
           "n": 47
         },
         "dm_vs_rw": {
-          "stat": 1.91,
-          "p": 0.0312,
+          "stat": 1.911,
+          "p": 0.0311,
           "n": 47
         },
         "dm_vs_best": {
           "stat": -0.849,
-          "p": 0.8,
+          "p": 0.7998,
           "n": 47
         },
-        "hit_model": 0.617,
+        "hit_model": 0.596,
         "hit_ar1": 0.702,
         "coverage": 0.872,
         "start": "2023-01",
@@ -479,25 +479,25 @@
       "p_holm": 1.0,
       "n_oos": 46,
       "metrics": {
-        "rmse_model": 2.1561,
+        "rmse_model": 2.1559,
         "rmse_ar1": 2.1199,
         "rmse_rw": 2.1302,
         "ratio_ar1": 1.017,
         "ratio_rw": 1.012,
         "best_bench": "ar1",
         "dm_vs_ar1": {
-          "stat": -0.451,
-          "p": 0.6729,
+          "stat": -0.444,
+          "p": 0.6705,
           "n": 46
         },
         "dm_vs_rw": {
-          "stat": -0.282,
-          "p": 0.6105,
+          "stat": -0.278,
+          "p": 0.6089,
           "n": 46
         },
         "dm_vs_best": {
-          "stat": -0.451,
-          "p": 0.6729,
+          "stat": -0.444,
+          "p": 0.6705,
           "n": 46
         },
         "hit_model": 0.565,
@@ -511,40 +511,40 @@
         "status": "ok",
         "last_actual": 2.58,
         "last_month": "2026-10",
-        "model": 2.873,
-        "model_lo": 0.665,
-        "model_hi": 6.431,
+        "model": 3.03,
+        "model_lo": 0.822,
+        "model_hi": 6.608,
         "ar1": 2.48,
         "ar1_lo": 0.453,
         "ar1_hi": 6.077,
         "rw": 2.58,
         "rw_lo": 0.321,
         "rw_hi": 6.406,
-        "delta_model": 0.294,
+        "delta_model": 0.45,
         "delta_ar1": -0.1,
-        "n_days": 26,
+        "n_days": 27,
         "expected_days": 30,
-        "alpha": 300,
+        "alpha": 100,
         "contributions": [
           {
             "feature": "d_K5_gecim",
-            "value": 0.1323
+            "value": 0.2224
           },
           {
             "feature": "d_korku_gunluk",
-            "value": 0.099
+            "value": 0.2025
           },
           {
             "feature": "d_K1_istihdam",
-            "value": 0.0648
+            "value": 0.0859
+          },
+          {
+            "feature": "d_K2_borc",
+            "value": -0.056
           },
           {
             "feature": "ar",
-            "value": -0.022
-          },
-          {
-            "feature": "d_K4_guvenli_liman",
-            "value": 0.0189
+            "value": -0.0345
           }
         ]
       },
@@ -565,7 +565,7 @@
       "component": "korku",
       "status": "ok",
       "jump": 0.094,
-      "jump_pct": 65.9,
+      "jump_pct": 66.3,
       "peak_pct": null
     },
     {
@@ -574,7 +574,7 @@
       "component": "korku",
       "status": "ok",
       "jump": 0.201,
-      "jump_pct": 80.6,
+      "jump_pct": 80.2,
       "peak_pct": 79.2
     },
     {
